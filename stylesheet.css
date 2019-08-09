@@ -5,22 +5,73 @@ body {
 
 h1 {
     font-family: Garamond, Palatino, Times, serif;
-    font-size: 250%;
+    font-size: 350%;
 }
 
 h2 {
     font-family:Georgia, Times, serif;
 }
 
-table.menuSty {
-    font-family: Georgia, Geneva, Tahoma, sans-serif;
-    font-size: medium;
-    color: #800000;
-    margin-left:auto; 
-    margin-right:auto;
-
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+  
+/* Ben and Cheryl */
+.names {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
-td {
-    width: 100px;
+/* Date */
+.date {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
+
+/* Countdown Timer */
+.counter {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Style the navbar */
+#navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  /* Navbar links */
+  #navbar a {
+    float: left;
+    display: block;
+    color: #1d0e46;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+  }
+  
+  /* Page content */
+  .content {
+    padding: 16px;
+  }
+  
+  /* The sticky class is added to the navbar with JS when it reaches its scroll position */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 60px;
+  }
