@@ -1,0 +1,26 @@
+body {
+    text-align: center;
+    color: black;
+}
+
+h1 {
+    font-family: Garamond, Palatino, Times, serif;
+    font-size: 250%;
+}
+
+h2 {
+    font-family:Georgia, Times, serif;
+}
+
+table.menuSty {
+    font-family: Georgia, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    color: #800000;
+    margin-left:auto; 
+    margin-right:auto;
+
+}
+
+td {
+    width: 100px;
+}
