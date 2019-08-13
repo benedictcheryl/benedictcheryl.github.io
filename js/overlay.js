@@ -11,6 +11,5 @@ function loadpage() {
         testV += 1;
         pass1 = prompt('Input Code Not Recognized, Please Try Again', 'Invite Code');
     }
-    history.go(-1);
     return " ";
 }
