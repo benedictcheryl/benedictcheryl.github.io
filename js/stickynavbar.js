@@ -13,5 +13,6 @@ function myFunction() {
     navbar.classList.add("sticky")
   } else {
     navbar.classList.remove("sticky");
+    //make this transition smoother!
   }
 }
