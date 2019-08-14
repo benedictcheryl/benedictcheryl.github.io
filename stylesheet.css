@@ -14,21 +14,29 @@ h2 {
 
 /* Overlay for passcode */
 #overlay {
+  color: white;
+}
+
+.blackout {
   position: fixed;
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0,0,0,1);
   z-index: 10000;
-  color: white;
-  
 }
 
 .disappear {
+  position: fixed;
   opacity: 0;
-  background-color: rgba(82, 35, 35, 0);
+  top: 0;
+  right: 0;
+  width: 0.00000001%;
+  height: 0.00000001%;
+  background-color: rgba(0,0,0,0);
   z-index: -10000;
+  transform: scale(0.0000000001);
 }
 
 /* Container holding the image and the text */

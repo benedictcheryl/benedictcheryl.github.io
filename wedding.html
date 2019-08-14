@@ -9,10 +9,13 @@
 
 <body class="content">
 
-  <div id="overlay">
+  <div id="overlay" class="blackout">
       <h1><span style="top:50px">Benedict & Cheryl</span></h1>
       <form>
-        <input type="button" value="Enter Invite Code" onClick="loadpage()">
+        <!--<input type="button" value="Enter Invite Code" onClick="loadpage()">-->
+        <span>Please Enter Invite Code:</span><br/>
+        <input type="text" name="inviteCode" id="inviteCode" value="" placeholder="Invite Code" maxlength="20" /></br>
+        <input type="button" value="Submit" onClick="loadpage()" />
       </form>
   </div>
   
@@ -31,11 +34,13 @@
     <a href="#contactUs">Contact Us</a>
   </div>
 
-  <h2 id="ourStory">Our Story</h2>
-  <img src="pics/proposal.jpg" alt="Proposal Pic" style="width:500px">
+  <span id="ourStory"></span>
+  <h2>Our Story</h2>
+  <img src="pics/proposal.jpg" alt="Proposal Pic" style="width:100%">
   <p>Ben and Cheryl blah blah blah...</p>
 
-  <div id="ourMemories">
+  <span id="ourMemories"></span>
+  <div>
     <h2>Our Memories</h2>
     <p>Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. </p>
   </div>
@@ -56,7 +61,7 @@
   </div>
 </body>
 
-<script src="js/overlay.js"></script>
+<script src="js/initiate.js"></script>
 <script src="js/stickynavbar.js"></script>
 
 
