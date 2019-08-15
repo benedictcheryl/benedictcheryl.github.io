@@ -13,6 +13,14 @@
     }
 }*/
 
+/* Trigger submit upon Enter key */
+var inviteCodeBox = document.getElementById("inviteCode");
+inviteCodeBox.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+        loadpage();
+    }
+});
+
 function loadpage() {
     var boxoverlay = document.getElementById("overlay");
     var pass2 = inviteCode.value;
