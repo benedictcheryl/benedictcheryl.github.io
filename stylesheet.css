@@ -14,14 +14,14 @@ p {
 
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 8vw;
-  transform: scale(1.2);
+  font-size: 5vw;
+  transform: scale(1.92);
   text-shadow: 2px 2px 2px #aaa;
 }
 
 h2 {
  font-family: 'Shadows Into Light Two', cursive;
- font-size: 28px;
+ font-size: 20px;
 }
 
 h3 {
