@@ -3,16 +3,19 @@ body {
   font-family: 'Merriweather', "Times New Roman", Times, serif;
   color: #000000;
   font-size: 16px;
+  margin: 0 0 0 0;
 }
 
 p {
   text-align: justify;
   color: #111111;
+  margin: 3px 8px 3px 8px;
 }
 
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 70px;
+  font-size: 8vw;
+  transform: scale(1.2);
   text-shadow: 2px 2px 2px #aaa;
 }
 
@@ -23,7 +26,7 @@ h2 {
 
 h3 {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size: 26px;
+  font-size: 4.5vmin;
 }
 
 /* Overlay for passcode */
@@ -63,7 +66,7 @@ h3 {
 /* Ben and Cheryl */
 .names {
     position: absolute;
-    top: 12%;
+    top: 11%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -79,11 +82,11 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 26.5%;
+    top: 27.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size:18px;
+    font-size:3.2vmin;
 }
 
 /* Style the navbar */
@@ -98,8 +101,9 @@ h3 {
   display: block;
   color: #1d0e46;
   text-align: center;
-  padding: 14px;
+  padding: 1.5vw 3vw 1.5vw 3vw;
   text-decoration: none;
+  font-size: 2.5vmin;
 }
   
 /* Page content */
