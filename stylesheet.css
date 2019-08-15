@@ -1,15 +1,30 @@
 body {
-    text-align: center;
-    color: black;
+  text-align: center;
+  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  color: #111111;
+}
+
+p {
+  text-align: justify;
 }
 
 h1 {
-    font-family: Garamond, Palatino, Times, serif;
-    font-size: 250%;
+  font-family: 'Reenie Beanie', Garamond, cursive;
+  font-size: 200%;
+  font-size: 6vw;
+  text-shadow: 4px 4px 4px #aaa;
 }
 
 h2 {
-    font-family:Georgia, Times, serif;
+ font-family: 'Shadows Into Light Two', cursive;
+ font-size:180%;
+ font-size:2.5vw;
+}
+
+h3 {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size:150%;
+  font-size:2vw;
 }
 
 /* Overlay for passcode */
@@ -68,6 +83,8 @@ h2 {
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size:1.5vw;
 }
 
 /* Style the navbar */
