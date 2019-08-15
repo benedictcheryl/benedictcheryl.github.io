@@ -1,30 +1,29 @@
 body {
   text-align: center;
   font-family: 'Merriweather', "Times New Roman", Times, serif;
-  color: #111111;
+  color: #000000;
+  font-size: 16px;
 }
 
 p {
   text-align: justify;
+  color: #111111;
 }
 
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 200%;
-  font-size: 6vw;
-  text-shadow: 4px 4px 4px #aaa;
+  font-size: 70px;
+  text-shadow: 2px 2px 2px #aaa;
 }
 
 h2 {
  font-family: 'Shadows Into Light Two', cursive;
- font-size:180%;
- font-size:2.5vw;
+ font-size: 28px;
 }
 
 h3 {
   font-family: 'Shadows Into Light Two', cursive;
-  font-size:150%;
-  font-size:2vw;
+  font-size: 26px;
 }
 
 /* Overlay for passcode */
@@ -72,7 +71,7 @@ h3 {
 /* Date */
 .date {
     position: absolute;
-    top: 20%;
+    top: 22%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -80,11 +79,11 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 25%;
+    top: 26.5%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size:1.5vw;
+    font-size:18px;
 }
 
 /* Style the navbar */
