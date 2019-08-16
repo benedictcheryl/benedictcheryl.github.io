@@ -14,9 +14,9 @@ p {
 
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 5vw;
-  transform: scale(1.92);
-  text-shadow: 2px 2px 2px #aaa;
+  font-size: 4.8vw;
+  transform: scale(2);
+  text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
 
 h2 {
