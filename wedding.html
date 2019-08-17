@@ -4,27 +4,33 @@
 <head>
   <title>Ben & Cheryl</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
+    rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 
 <body class="content">
 
   <div id="overlay" class="blackout">
-      <h1><span style="top:50px">Benedict & Cheryl</span></h1>
-      <form>
-        <!--<input type="button" value="Enter Invite Code" onClick="loadpage()">-->
-        <span>Please Enter Invite Code:</span><br/>
-        <input type="text" name="inviteCode" id="inviteCode" value="" placeholder="Invite Code" maxlength="20" 
+    <h1><span style="top:50px" data-aos="zoom-in" data-aos-duration="300">Benedict & Cheryl</span></h1>
+    <form data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+      <!--<input type="button" value="Enter Invite Code" onClick="loadpage()">-->
+      <span>Please Enter Invite Code:</span><br />
+      <input type="text" name="inviteCode" id="inviteCode" value="" placeholder="Invite Code" maxlength="20"
         onkeydown="if (event.keyCode == 13) {return false;}" /></br></br>
-        <input type="button" value="Submit" onClick="loadpage()" />
-      </form>
+      <input type="button" value="Submit" onClick="loadpage()" />
+    </form>
   </div>
 
   <div class="container">
     <img src="pics/tenerife.jpg" alt="Background Pic" style="width:100%">
-    <div class="names"><h1>Benedict & Cheryl</h1></div>
-    <div class="date"><h3>December 5, 2020</h3></div>
+    <div class="names">
+      <h1>Benedict & Cheryl</h1>
+    </div>
+    <div class="date">
+      <h3>December 5, 2020</h3>
+    </div>
     <div class="counter" id="demo"></div>
   </div>
 
@@ -38,55 +44,80 @@
 
   <span id="ourStory"></span>
   <h2>Our Story</h2>
-  <!--<img src="pics/proposal.jpg" alt="Proposal Pic" style="width:100%">-->
-  <p>Ben and Cheryl blah blah blah...</p>
-
+  <div data-aos="fade-up">
+    <p class="poem">19, wide-eyed, naïve in love<br />Holding hands we leapt in faith<br />To love and to be loved by
+      you<br />A
+      glimpse of love much greater</p>
+    <p class="poem">But our sinful flesh betrays us<br />Selfish love's not love at all<br />For can two broken lives
+      expect<br />Unbrokenness together?</p>
+    <p class="poem">So at the cross on bended knee<br />Our lives in full surrender<br />I cannot give you perfect
+      love<br />Only point
+      to One who is</p>
+    <p class="poem">To love you as Christ loves the church<br />We’ll run this race together<br />We don’t know what the
+      future
+      holds<br />But do know He who holds it</p>
+  </div>
+  
   <span id="ourMemories"></span>
   <div>
     <h2>Our Memories</h2>
-    <div class="container" data-aos="fade-down"> 
-      <div class = "grid">
-        <div class="cell">
-          <img src="pics/y1.jpg" class="responsive-image">
-        </div>
-        <div class="cell">
-          <img src="pics/y2.jpg" class="responsive-image">
-        </div>
-        <div class="cell">
-          <img src="pics/y3.jpg" class="responsive-image">
-        </div>
-        <div class="cell">
-          <img src="pics/y4.jpg" class="responsive-image">
-        </div>
-        <div class="cell">
-          <img src="pics/y4b.jpg" class="responsive-image">
-        </div>
-        <div class="cell">
-          <img src="pics/y5.jpg" class="responsive-image">
-        </div>
+    <div class="grid-container" data-aos="fade-up">
+      <div class="cell">
+        <img src="pics/y1.jpg" class="responsive-image">
       </div>
-    </div>    
+      <div class="cell">
+        <img src="pics/y2.jpg" class="responsive-image">
+      </div>
+      <div class="cell">
+        <img src="pics/y3.jpg" class="responsive-image">
+      </div>
+      <div class="cell">
+        <img src="pics/y4.jpg" class="responsive-image">
+      </div>
+      <div class="cell">
+        <img src="pics/y4b.jpg" class="responsive-image">
+      </div>
+      <div class="cell">
+        <img src="pics/y5.jpg" class="responsive-image">
+      </div>
+    </div>
   </div>
 
   <div id="details">
     <h2>Details</h2>
-    <p>Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. </p>
+    <p data-aos="fade-up">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+      Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+      Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+    </p>
   </div>
 
   <div id="rsvp">
     <h2>R.S.V.P.</h2>
-    <p>Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing. </p>
+    <p data-aos="fade-up">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+      Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+      Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+      for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
+    </p>
   </div>
 
   <div id="contactUs">
-  <h2>Contact Us</h2>
-  <p>For any queries, contact us at xxx@gmail.com</p>
+    <h2>Contact Us</h2>
+    <p>For any queries, contact us at xxx@gmail.com</p>
   </div>
+
+  <script src="js/initiate.js"></script>
+  <script src="js/stickynavbar.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
-
-<script src="js/initiate.js"></script>
-<script src="js/stickynavbar.js"></script>
-<script src="js/countdown.js"></script>
-
 
 </html>

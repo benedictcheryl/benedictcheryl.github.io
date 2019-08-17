@@ -4,12 +4,14 @@ body {
   color: #000000;
   font-size: 16px;
   margin: 0 0 0 0;
+  background-color: #f4f7ff;
 }
 
 p {
   text-align: justify;
   color: #111111;
-  margin: 3px 8px 3px 8px;
+  margin: 10px 8px 10px 8px;
+  line-height: 120%
 }
 
 h1 {
@@ -92,7 +94,8 @@ h3 {
 /* Style the navbar */
 #navbar {
     overflow: hidden;
-    background-color: #ffffff;
+    background-color: #e8efff;
+    z-index: 100; 
   }
   
 /* Navbar links */
@@ -124,22 +127,30 @@ h3 {
   margin-top: 60px;
 }
 
+.poem {
+  text-align: center;
+}
+
 .responsive-image {
   max-width: 100vw;
 }
 
-.grid {
+/* For desktop */
+.grid-container {
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  grid-gap: 0;
+  gap: 0;
 }
 .cell {
   width: calc(100% / 3);
+  gap: 0;
 }
 
 .cell img {
-  width: 33.33vw;
-  height: 33.33vw;
+  width: 33.333vw;
+  height: 33.333vw;
   object-fit: cover;
 }
