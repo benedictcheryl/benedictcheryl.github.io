@@ -20,12 +20,12 @@ h1 {
 }
 
 h2 {
- font-family: 'Shadows Into Light Two', cursive;
+ font-family: 'Shadows Into Light Two', Times, cursive;
  font-size: 20px;
 }
 
 h3 {
-  font-family: 'Shadows Into Light Two', cursive;
+  font-family: 'Shadows Into Light Two', Times, cursive;
   font-size: 4.5vmin;
 }
 
@@ -122,4 +122,25 @@ h3 {
 .sticky + .content {
   padding-top: 60px;
   margin-top: 60px;
+}
+
+.responsive-image {
+  max-width: 100%;
+  align-self: center;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  grid-gap: 0;
+}
+.cell {
+  width: calc(100% / 3);
+}
+
+.cell img {
+  width: 33.33vw;
+  height: 33.33vw;
+  object-fit: cover;
 }
