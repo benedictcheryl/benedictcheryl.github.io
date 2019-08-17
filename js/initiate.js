@@ -1,3 +1,7 @@
+var imported = document.createElement('script');
+imported.src = "https://unpkg.com/aos@next/dist/aos.js";
+document.head.appendChild(imported);
+
 // DESKTOP
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
 // left: 37, up: 38, right: 39, down: 40,
@@ -70,6 +74,7 @@ function loadpage() {
         boxoverlay.classList.remove("blackout");
         enable_scroll();
         window.scrollTo(0, 0);
+        AOS.init();
     }
     else {
         alert("Invite code not recognized, please try again");

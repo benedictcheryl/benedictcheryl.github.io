@@ -13,8 +13,8 @@
 <body class="content">
 
   <div id="overlay" class="blackout">
-    <h1><span style="top:50px" data-aos="zoom-in" data-aos-duration="300">Benedict & Cheryl</span></h1>
-    <form data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+    <h1><span style="top:50px">Benedict & Cheryl</span></h1>
+    <form>
       <!--<input type="button" value="Enter Invite Code" onClick="loadpage()">-->
       <span>Please Enter Invite Code:</span><br />
       <input type="text" name="inviteCode" id="inviteCode" value="" placeholder="Invite Code" maxlength="20"
@@ -23,7 +23,7 @@
     </form>
   </div>
 
-  <div class="container">
+  <div class="container" data-aos="fade-down" data-aos-duration="1000">
     <img src="pics/tenerife.jpg" alt="Background Pic" style="width:100%">
     <div class="names">
       <h1>Benedict & Cheryl</h1>
@@ -110,13 +110,13 @@
     <p>For any queries, contact us at xxx@gmail.com</p>
   </div>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/initiate.js"></script>
   <script src="js/stickynavbar.js"></script>
   <script src="js/countdown.js"></script>
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
+  <!--<script>
     AOS.init();
-  </script>
+  </script>-->
 
 </body>
 
