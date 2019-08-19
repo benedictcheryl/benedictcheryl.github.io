@@ -1,6 +1,9 @@
+// Import AOS script to initialise only after login page
 var imported = document.createElement('script');
 imported.src = "https://unpkg.com/aos@next/dist/aos.js";
 document.head.appendChild(imported);
+
+// *** ARROWS AND SPACEBAR LOCK WORKING, SCROLLWHEEL AND MOBILE NOT WORKING! ***
 
 // DESKTOP
 // spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
@@ -49,9 +52,12 @@ function enable_scroll() {
 // MOBILE
 function disable_scroll_mobile(){
   document.addEventListener('touchmove',preventDefault, false);
+  //$('body,html').bind('touchmove', function(e){e.preventDefault()});
+
 }
 function enable_scroll_mobile(){
   document.removeEventListener('touchmove',preventDefault, false);
+  //$('body,html').unbind('touchmove');
 }
 
 // Lock scrolling upon initialisation
