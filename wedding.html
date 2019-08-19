@@ -23,7 +23,7 @@
     </form>
   </div>
 
-  <div class="container" data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+  <div class="container" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
     <img src="pics/tenerife.jpg" alt="Background Pic" style="width:100%">
     <div class="names">
       <h1>Benedict & Cheryl</h1>
@@ -43,8 +43,8 @@
   </div>
 
   <span id="ourStory"></span>
-  <h2>Our Story</h2>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true">
+  <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="800" data-aos-once="true">Our Story</h2>
+  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">
     <p class="poem">19, wide-eyed, naïve in love<br />Holding hands we leapt in faith<br />To love and to be loved by
       you<br />A
       glimpse of love much greater</p>
@@ -60,7 +60,7 @@
   
   <span id="ourMemories"></span>
   <div>
-    <h2>Our Memories</h2>
+    <h2 data-aos="fade-up" data-aos-once="true">Our Memories</h2>
     <div class="grid-container" data-aos="fade-up" data-aos-once="true">
       <div class="cell">
         <img src="pics/y1.jpg" class="responsive-image">
@@ -84,7 +84,7 @@
   </div>
 
   <div id="details">
-    <h2>Details</h2>
+    <h2 data-aos="fade-up" data-aos-once="true">Details</h2>
     <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
       Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
@@ -95,7 +95,7 @@
   </div>
 
   <div id="rsvp">
-    <h2>R.S.V.P.</h2>
+    <h2 data-aos="fade-up" data-aos-once="true">R.S.V.P.</h2>
     <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
       Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
@@ -106,17 +106,18 @@
   </div>
 
   <div id="contactUs">
-    <h2>Contact Us</h2>
-    <p>For any queries, contact us at xxx@gmail.com</p>
+    <h2 data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom">Contact Us</h2>
+    <p data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom">For any queries, contact us at xxx@gmail.com</p>
   </div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="js/bodyScrollLock.js"></script>
   <script src="js/initiate.js"></script>
   <script src="js/stickynavbar.js"></script>
   <script src="js/countdown.js"></script>
-  <!--<script>
-    AOS.init();
-  </script>-->
+  <script>
+    window.onscroll = function () { window.scrollTo(0, 0); };
+  </script>
 
 </body>
 

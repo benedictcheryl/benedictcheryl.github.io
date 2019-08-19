@@ -1,7 +1,8 @@
-// Import AOS script to initialise only after login page
+/* //Import AOS script to initialise only after login page
 var imported = document.createElement('script');
 imported.src = "https://unpkg.com/aos@next/dist/aos.js";
 document.head.appendChild(imported);
+
 
 // *** ARROWS AND SPACEBAR LOCK WORKING, SCROLLWHEEL AND MOBILE NOT WORKING! ***
 
@@ -48,20 +49,20 @@ function enable_scroll() {
   	enable_scroll_mobile();
 }
 
-// My improvement
 // MOBILE
 function disable_scroll_mobile(){
-  document.addEventListener('touchmove',preventDefault, false);
-  //$('body,html').bind('touchmove', function(e){e.preventDefault()});
-
+  document.addEventListener('touchmove',preventDefault,false);
 }
 function enable_scroll_mobile(){
-  document.removeEventListener('touchmove',preventDefault, false);
-  //$('body,html').unbind('touchmove');
+  document.removeEventListener('touchmove',preventDefault,false);
 }
 
+*/
+
+
 // Lock scrolling upon initialisation
-disable_scroll();
+//disable_scroll();
+
 
 /* Trigger submit upon Enter key */
 var inviteCodeBox = document.getElementById("inviteCode");
@@ -71,6 +72,8 @@ inviteCodeBox.addEventListener("keydown", function (e) {
     }
 });
 
+
+
 // Verification
 function loadpage() {
     var boxoverlay = document.getElementById("overlay");
@@ -78,8 +81,9 @@ function loadpage() {
     if (pass2.toLowerCase() == "wedding") {
         boxoverlay.classList.add("disappear");
         boxoverlay.classList.remove("blackout");
-        enable_scroll();
-        window.scrollTo(0, 0);
+        //enable_scroll();
+        //window.scrollTo(0, 0); 
+        window.onscroll=function(){};
         AOS.init();
     }
     else {
