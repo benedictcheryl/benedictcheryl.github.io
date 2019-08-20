@@ -64,15 +64,15 @@ function enable_scroll_mobile(){
 //disable_scroll();
 
 
+
 /* Trigger submit upon Enter key */
+var entered = 0; // Single entry flag so Enter doesn't trigger scroll to 0 after entry
 var inviteCodeBox = document.getElementById("inviteCode");
 inviteCodeBox.addEventListener("keydown", function (e) {
-    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+    if (e.keyCode === 13 && entered == 0) {  //checks whether the pressed key is "Enter" and still on entry page
         loadpage();
     }
 });
-
-
 
 // Verification
 function loadpage() {
@@ -82,9 +82,10 @@ function loadpage() {
         boxoverlay.classList.add("disappear");
         boxoverlay.classList.remove("blackout");
         //enable_scroll();
-        //window.scrollTo(0, 0); 
-        window.onscroll=function(){};
-        AOS.init();
+        window.scrollTo(0, 0); 
+        window.onscroll = function(){}; // remove scroll lock
+        AOS.init(); // initialise animations
+        entered = 1; // set entry flag as entered
     }
     else {
         alert("Invite code not recognized, please try again");
