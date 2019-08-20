@@ -17,19 +17,21 @@ p {
 
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 4.8vw;
+  font-size: 4.5vw;
   transform: scale(2);
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
 
+/* Section headers */
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
- font-size: 20px;
+ font-size: 26px;
 }
 
+/* Wedding date */
 h3 {
   font-family: 'Shadows Into Light Two', Times, cursive;
-  font-size: 4.5vmin;
+  font-size: 2.5vw;
 }
 
 /* Overlay for passcode */
@@ -66,7 +68,15 @@ h3 {
 .BOnames {
   position: absolute;
   color: white;
-  top: 11%;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.BOform {
+  position: absolute;
+  color: white;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -90,7 +100,7 @@ h3 {
 /* Ben and Cheryl */
 .names {
     position: absolute;
-    top: 11%;
+    top: 11.3%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -98,7 +108,7 @@ h3 {
 /* Date */
 .date {
     position: absolute;
-    top: 22%;
+    top: 23.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -106,11 +116,11 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 27.5%;
+    top: 28.3%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size:3.2vmin;
+    font-size: 1.8vw;
 }
 
 /* Style the navbar */
@@ -175,4 +185,72 @@ h3 {
   width: 33.333vw;
   height: 33.333vw;
   object-fit: cover;
+}
+
+
+
+/* Mobile Styles */
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  h1 {
+    font-family: 'Reenie Beanie', Garamond, cursive;
+    font-size: 5.2vw;
+    transform: scale(2);
+    text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
+  }
+  
+  /* Section headers */
+  h2 {
+  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  }
+ 
+ /* Wedding date */
+  h3 {
+  font-family: 'Shadows Into Light Two', Times, serif;
+  font-size: 4.7vw;
+  }
+
+  /* Countdown Timer */
+  .counter {
+  position: absolute;
+  top: 29.6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 3.45vw;
+  }
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  h1 {
+    font-family: 'Reenie Beanie', Garamond, cursive;
+    font-size: 5vw;
+    transform: scale(2);
+    text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
+  }
+  
+  /* Section headers */
+  h2 {
+  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  }
+ 
+ /* Wedding date */
+  h3 {
+  font-family: 'Shadows Into Light Two', Times, serif;
+  font-size: 3vw;
+  }
+
+  /* Countdown Timer */
+  .counter {
+  position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 2.27vw;
+  }
+
 }
