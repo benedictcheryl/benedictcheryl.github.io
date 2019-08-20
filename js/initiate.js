@@ -77,10 +77,12 @@ inviteCodeBox.addEventListener("keydown", function (e) {
 // Verification
 function loadpage() {
     var boxoverlay = document.getElementById("overlay");
+    var body123 = document.getElementById("body123");
     var pass2 = inviteCode.value;
     if (pass2.toLowerCase() == "wedding") {
         boxoverlay.classList.add("disappear");
         boxoverlay.classList.remove("blackout");
+        body123.classList.remove("BOinit");
         //enable_scroll();
         window.scrollTo(0, 0); 
         window.onscroll = function(){}; // remove scroll lock
