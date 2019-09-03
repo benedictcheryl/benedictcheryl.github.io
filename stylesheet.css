@@ -11,7 +11,7 @@ body {
 p {
   text-align: justify;
   color: #111111;
-  margin: 10px 10px 10px 10px;
+  margin: 10px 20px 10px 20px;
   line-height: 120%
 }
 
@@ -203,27 +203,20 @@ h3 {
   text-emphasis: bolder;
 }
 
-/* === Other styles === */
+/* === Our Story === */
 
 .poem {
   text-align: center;
 }
 
-.responsive-image {
-  max-width: 100vw;
-}
-
-/* === Background colour block styles === */
-
-/* === For desktop/default === */
+/* === Our Memories === */
 .grid-container {
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   gap: 0;
 }
+
 .cell {
   width: calc(100% / 3);
   gap: 0;
@@ -239,7 +232,29 @@ h3 {
   margin: 0;
 }
 
+.responsive-image {
+  max-width: 100vw;
+}
 
+/* === Details === */
+.details {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.detailslist {
+  width: 30%;
+  padding: 3vw;
+}
+
+.arpcmap {
+  padding: 0px;
+  margin: 0px;
+  display: table;
+  width: 60%; /* Edit this for mobile */
+  height: 60vh;
+  border: 0px;
+}
 
 /* === Mobile Styles === */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
