@@ -273,6 +273,7 @@ h3 {
   }
 
   #navbar table td {
+    height: 20px;
     padding: 3px 2.6vw 3px 2.5vw;
     font-size: 2.5vw;
   }
@@ -285,6 +286,12 @@ h3 {
   .datelogo {
     transform: translate(200%, 0);
     font-size: 0;
+  }
+
+  #navanchor {
+    display: block;
+    position: absolute;
+    bottom: 15%;
   }
 }
 
@@ -323,6 +330,7 @@ h3 {
     padding: 3px 2.1vw 3px 2.1vw;
     font-size: 1.45vw;
   }
+  
 
   .namelogo {
     font-size: 2.76vw;
