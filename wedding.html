@@ -4,7 +4,8 @@
 <head>
   <title>Ben & Cheryl</title>
   <link rel="stylesheet" href="stylesheet.css">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes|Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css?family=Great+Vibes|Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
@@ -13,7 +14,9 @@
 <body id="body123" class="content BOinit">
 
   <div id="overlay" class="blackout">
-    <div class="BOnames"><h1>Benedict & Cheryl</h1></div><br/><br/>
+    <div class="BOnames">
+      <h1>Benedict & Cheryl</h1>
+    </div><br /><br />
     <div class="BOform">
       <form>
         <span>Please Enter Invite Code:</span><br />
@@ -22,10 +25,10 @@
         <input type="button" value="Submit" onClick="loadpage()" />
       </form>
     </div>
-    <div class="BOversion">Version 1.4: diff font size for mobile/tablet/desktop</div>
+    <div class="BOversion">Version 1.5: nav bar modified</div>
   </div>
 
-  <div class="container" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
+  <div id="titleposter" data-aos="fade-down" data-aos-duration="800" data-aos-once="true">
     <img src="pics/tenerife.jpg" alt="Background Pic" style="width:100%">
     <div class="names">
       <h1>Benedict & Cheryl</h1>
@@ -36,31 +39,36 @@
     <div class="counter" id="demo"></div>
   </div>
 
-  <div id="navbar">
-    <a href="#ourStory">Our Story</a>
-    <a href="#ourMemories">Our Memories</a>
-    <a href="#details">Details</a>
-    <a href="#rsvp">R.S.V.P.</a>
-    <a href="#contactUs">Contact Us</a>
+  <div id="navbar" data-aos="fade-down" data-aos-anchor="#titleposter" data-aos-anchor-placement="bottom-top">
+    <table>
+      <tr>
+        <td><a href="#ourStory">OUR STORY</a></td>
+        <td><a href="#ourMemories">MEMORIES</a></td>
+        <td><a href="#details">DETAILS</a></td>
+        <td><a href="#rsvp">R.S.V.P.</a></td>
+        <td><a href="#contactUs">CONTACT US</a></td>
+      </tr>
+    </table>
   </div>
 
-  <span id="ourStory"></span>
-  <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="800" data-aos-once="true">Our Story</h2>
-  <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="800" data-aos-once="true">
-    <p class="poem">19, wide-eyed, naïve in love<br />Holding hands we leapt in faith<br />To love and to be loved by
-      you<br />A
-      glimpse of love much greater</p>
-    <p class="poem">But our sinful flesh betrays us<br />Selfish love's not love at all<br />For can two broken lives
-      expect<br />Unbrokenness together?</p>
-    <p class="poem">So at the cross on bended knee<br />Our lives in full surrender<br />I cannot give you perfect
-      love<br />Only point
-      to One who is</p>
-    <p class="poem">To love you as Christ loves the church<br />We’ll run this race together<br />We don’t know what the
-      future
-      holds<br />But do know He who holds it</p>
+  <span class="offsetanchor" id="ourStory"></span>
+  <div>
+    <h2 data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="200" data-aos-duration="800"
+      data-aos-once="true">Our Story</h2>
+    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-delay="400" data-aos-duration="800"
+      data-aos-once="true">
+      <p class="poem">19, wide-eyed, naïve in love<br />Holding hands we leapt in faith<br />To love and to be loved by
+        you<br />A glimpse of love much greater</p>
+      <p class="poem">But our sinful flesh betrays us<br />Selfish love's not love at all<br />For can two broken lives
+        expect<br />Unbrokenness together?</p>
+      <p class="poem">So at the cross on bended knee<br />Our lives in full surrender<br />I cannot give you perfect
+        love<br />Only point to One who is</p>
+      <p class="poem">To love you as Christ loves the church<br />We’ll run this race together<br />We don’t know what
+        the future holds<br />But do know He who holds it</p>
+    </div>
   </div>
-  
-  <span id="ourMemories"></span>
+
+  <span class="offsetanchor" id="ourMemories"></span>
   <div>
     <h2 data-aos="fade-up" data-aos-once="true">Our Memories</h2>
     <div class="grid-container" data-aos="fade-up" data-aos-once="true">
@@ -85,9 +93,11 @@
     </div>
   </div>
 
-  <div id="details">
+  <span class="offsetanchor" id="details"></span>
+  <div>
     <h2 data-aos="fade-up" data-aos-once="true">Details</h2>
-    <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+    <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for
+      testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
       Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
@@ -96,9 +106,11 @@
     </p>
   </div>
 
-  <div id="rsvp">
+  <span class="offsetanchor" id="rsvp"></span>
+  <div>
     <h2 data-aos="fade-up" data-aos-once="true">R.S.V.P.</h2>
-    <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
+    <p data-aos="fade-up" data-aos-once="true">Random text for testing. Random text for testing. Random text for
+      testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
       Random text for testing. Random text for testing. Random text for testing. Random text for testing. Random text
       for testing. Random text for testing. Random text for testing. Random text for testing. Random text for testing.
@@ -107,15 +119,17 @@
     </p>
   </div>
 
-  <div id="contactUs">
+  <span class="offsetanchor" id="contactUs"></span>
+  <div>
     <h2 data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom">Contact Us</h2>
-    <p data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom">For any queries, contact us at xxx@gmail.com</p>
+    <p data-aos="fade-up" data-aos-once="true" data-aos-anchor-placement="top-bottom">For any queries, contact us at
+      xxx@gmail.com</p>
   </div>
 
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script src="js/bodyScrollLock.js"></script>
   <script src="js/initiate.js"></script>
-  <script src="js/stickynavbar.js"></script>
+  <!--<script src="js/stickynavbar.js"></script>-->
   <script src="js/countdown.js"></script>
   <script>
     window.onscroll = function () { window.scrollTo(0, 0); };

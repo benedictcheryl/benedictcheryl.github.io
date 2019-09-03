@@ -5,16 +5,17 @@ body {
   font-size: 16px;
   margin: 0 0 0 0;
   padding: 0;
-  background-color: #f4f7ff;
+  background-color: white;
 }
 
 p {
   text-align: justify;
   color: #111111;
-  margin: 10px 8px 10px 8px;
+  margin: 10px 10px 10px 10px;
   line-height: 120%
 }
 
+/* Ben and Cheryl */
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
   font-size: 4.5vw;
@@ -25,7 +26,8 @@ h1 {
 /* Section headers */
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
- font-size: 26px;
+ font-size: 30px;
+ margin: 20px 10px 15px 10px;
 }
 
 /* Wedding date */
@@ -34,7 +36,7 @@ h3 {
   font-size: 2.5vw;
 }
 
-/* Overlay for passcode */
+/* === Overlay for passcode === */
 #overlay {
   color: white;
 }
@@ -83,15 +85,15 @@ h3 {
 
 .BOversion {
   position: absolute;
-  color: white;
+  color: rgb(182, 182, 182);
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 50%);
 }
 
-
+/* === Title poster thing === */
 /* Container holding the image and the text */
-.container {
+#titleposter {
     position: relative;
     text-align: center;
     color: black;
@@ -123,41 +125,44 @@ h3 {
     font-size: 1.8vw;
 }
 
-/* Style the navbar */
+/* === Style the navbar ==== */
 #navbar {
     overflow: hidden;
-    background-color: #e8efff;
+    background-color: white;
+    opacity: 0.96;
     z-index: 100; 
+    position: fixed;
+    top: 0;
+    width: 100%;
   }
   
-/* Navbar links */
+#navbar table {
+  margin-left:auto; 
+  margin-right:auto;
+}
+
+#navbar table td {
+  max-width: 19.5vw;
+  height: 35px;
+}
+
 #navbar a {
-  float: left;
   display: block;
   color: #1d0e46;
   text-align: center;
-  padding: 1.5vw 3vw 1.5vw 3vw;
+  padding: 3px 1.8vw 3px 1.8vw;
   text-decoration: none;
-  font-size: 2.5vmin;
+  font-size: 1.1vw;
 }
-  
-/* Page content */
-.content {
-  padding: 0;
+
+.offsetanchor {
+  display: block;
+  position: relative;
+  top: -35px;
+  visibility: hidden;
 }
-  
-/* The sticky class is added to the navbar with JS when it reaches its scroll position */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-  
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-  padding-top: 60px;
-  margin-top: 60px;
-}
+
+/* === Other styles === */
 
 .poem {
   text-align: center;
@@ -167,7 +172,9 @@ h3 {
   max-width: 100vw;
 }
 
-/* For desktop */
+/* === Background colour block styles === */
+
+/* === For desktop/default === */
 .grid-container {
   display:grid;
   grid-template-columns: repeat(4, 1fr);
@@ -179,17 +186,21 @@ h3 {
 .cell {
   width: calc(100% / 3);
   gap: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .cell img {
   width: 33.333vw;
   height: 33.333vw;
   object-fit: cover;
+  padding: 0;
+  margin: 0;
 }
 
 
 
-/* Mobile Styles */
+/* === Mobile Styles === */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
@@ -201,7 +212,7 @@ h3 {
   /* Section headers */
   h2 {
   font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-  font-size: 22px;
+  font-size: 26px;
   }
  
  /* Wedding date */
@@ -220,9 +231,17 @@ h3 {
   font-size: 3.45vw;
   }
 
+  #navbar a {
+    display: block;
+    color: #1d0e46;
+    text-align: center;
+    padding: 3px 2.5vw 3px 2.5vw;
+    text-decoration: none;
+    font-size: 2.2vw;
+  }
 }
 
-/* Tablet Styles */
+/* === Tablet Styles === */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
@@ -234,7 +253,7 @@ h3 {
   /* Section headers */
   h2 {
   font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 28px;
   }
  
  /* Wedding date */
@@ -253,4 +272,12 @@ h3 {
   font-size: 2.27vw;
   }
 
+  #navbar a {
+    display: block;
+    color: #1d0e46;
+    text-align: center;
+    padding: 3px 2.2vw 3px 2.2vw;
+    text-decoration: none;
+    font-size: 1.6vw;
+  }
 }
