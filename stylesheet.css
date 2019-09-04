@@ -21,7 +21,7 @@ h1 {
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
  font-size: 30px;
- margin: 30px 10px 30px 10px;
+ margin: 40px 10px 30px 10px;
 }
 
 /* Wedding date */
@@ -87,7 +87,7 @@ h3 {
 
 /* === Title poster thing === */
 /* Container holding the image and the text */
-#titleposter {
+#home {
     position: relative;
     text-align: center;
     color: black;
@@ -201,6 +201,7 @@ h3 {
 
 .poem {
   text-align: center;
+  margin: 0px 15px;
 }
 
 /* === Our Memories === */
@@ -212,22 +213,29 @@ h3 {
 }
 
 .cell {
-  width: calc(100% / 3);
+  width: calc(100%/3);
+  height: 33.3333vw;
   gap: 0;
   padding: 0;
   margin: 0;
+  border-style: none;
+  overflow: hidden;
 }
 
 .cell img {
-  width: 33.333vw;
-  height: 33.333vw;
-  object-fit: cover;
+  width: 33.3334vw;
+  height: 33.3334vw;
+  object-fit: fill;
   padding: 0;
   margin: 0;
 }
 
 .responsive-image {
   max-width: 100vw;
+}
+
+.memoriesOffsetAnchor {
+  top: -50px;
 }
 
 /* === Details === */
@@ -238,6 +246,10 @@ h3 {
   width: 100%;
   padding: 0px;
   margin: 0px;
+}
+
+.detailsBoxReverse {
+  flex-direction: row-reverse;
 }
 
 .detailsCell {
@@ -251,7 +263,7 @@ h3 {
 }
 
 .detailsList {
-  padding: 10px 20px;
+  padding: 5px 30px;
   margin: 0px;
   text-align: justify;
 }
@@ -259,6 +271,21 @@ h3 {
 .venueMap {
   height: auto;
   padding: 0px;
+}
+
+/* === Credits === */
+
+.credits {
+  background-color: rgb(100, 100, 100);
+  color: white;
+  padding: 10px 15px 0px 15px;
+  font-size: 12px;
+  line-height: 70%;
+}
+
+.mobileVersion {
+  visibility: hidden;
+  font-size: 0px;
 }
 
 /* === Mobile Styles === */
@@ -272,24 +299,24 @@ h3 {
   
   /* Section headers */
   h2 {
-  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-  font-size: 22px;
+    font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
+    font-size: 22px;
   }
  
  /* Wedding date */
   h3 {
-  font-family: 'Shadows Into Light Two', Times, serif;
-  font-size: 4.7vw;
+    font-family: 'Shadows Into Light Two', Times, serif;
+    font-size: 4.7vw;
   }
 
   /* Countdown Timer */
   .counter {
-  position: absolute;
-  top: 29.6%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Shadows Into Light Two', cursive;
-  font-size: 3.45vw;
+   position: absolute;
+   top: 29.6%;
+    left: 50%;
+   transform: translate(-50%, -50%);
+   font-family: 'Shadows Into Light Two', cursive;
+   font-size: 3.45vw;
   }
 
   #navbar table td {
@@ -321,10 +348,34 @@ h3 {
     visibility: hidden;
   }
 
+  .memoriesOffsetAnchor {
+    top: -40px;
+  }
+
   .detailsCell {
     width: 100%;
-    margin: 10px 20px;
+  }
+
+  .detailsList {
+    padding: 15px 15px 5px 15px;
     text-align: center;
+  }
+
+  .venueMap {
+    height: 40vh;
+  }
+
+  .negPadding {
+    margin-top: -30px;
+  }
+
+  .credits {
+    padding: 10px 15px 10px 15px;
+  }
+  
+  .mobileVersion {
+    visibility: visible;
+    font-size: 9px;
   }
 }
 
@@ -339,24 +390,24 @@ h3 {
   
   /* Section headers */
   h2 {
-  font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-  font-size: 26px;
+    font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
+    font-size: 26px;
   }
  
  /* Wedding date */
   h3 {
-  font-family: 'Shadows Into Light Two', Times, serif;
-  font-size: 3vw;
+    font-family: 'Shadows Into Light Two', Times, serif;
+    font-size: 3vw;
   }
 
   /* Countdown Timer */
   .counter {
-  position: absolute;
-  top: 29%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-family: 'Shadows Into Light Two', cursive;
-  font-size: 2.27vw;
+    position: absolute;
+    top: 29%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 2.27vw;
   }
 
   #navbar table td {
