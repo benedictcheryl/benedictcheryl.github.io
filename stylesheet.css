@@ -278,9 +278,9 @@ h3 {
 .credits {
   background-color: rgb(100, 100, 100);
   color: white;
-  padding: 10px 15px 0px 15px;
+  padding: 10px 20px 0px 20px;
   font-size: 12px;
-  line-height: 70%;
+  line-height:90%;
 }
 
 .mobileVersion {
@@ -372,9 +372,9 @@ h3 {
   .credits {
     background-color: rgb(100, 100, 100);
     color: white;
-    padding: 10px 15px 10px 15px;
+    padding: 10px 20px 10px 20px;
     font-size: 12px;
-    line-height: 80%;
+    line-height: 90%;
   }
   
   .mobileVersion {
