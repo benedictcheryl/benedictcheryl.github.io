@@ -370,13 +370,18 @@ h3 {
   }
 
   .credits {
+    background-color: rgb(100, 100, 100);
+    color: white;
     padding: 10px 15px 10px 15px;
+    font-size: 12px;
+    line-height: 70%;
   }
   
   .mobileVersion {
     visibility: visible;
     font-size: 9px;
   }
+
 }
 
 /* === Tablet Styles === */
