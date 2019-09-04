@@ -336,6 +336,10 @@ h3 {
   }
 
   .navbarlogo {
+    position: absolute;
+    left: 0.8%;
+    top: 50%;
+    transform: translate(0, -50%);
     height: 25px;
     width: auto;
   }
