@@ -37,13 +37,13 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(100,100,100);
+  background-color: rgb(150,150,150);
   z-index: 10000;
   color: white;
 }
 
 .BOinit {
-  background-color: rgb(100,100,100);
+  background-color: rgb(150,150,150);
 }
 
 .disappear {
@@ -71,8 +71,7 @@ h3 {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 150px;
-  height: auto;
+  height: 24vmin;
 }
 
 .BOform {
@@ -85,25 +84,29 @@ h3 {
 
 #inviteCode {
   padding: 10px 10px;
-  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  font-family: 'Shadows Into Light Two', 'Merriweather', "Times New Roman", Times, serif;
+  font-size: 16px;
   text-align: center;
   box-sizing: border-box;
   width: 300px;
+  max-width: 75vw;
   opacity: 0.8;
 }
 
 .BOsubmitButton {
   padding: 10px 10px;
-  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  font-family: 'Shadows Into Light Two', 'Merriweather', "Times New Roman", Times, serif;
+  font-size: 16px;
   text-align: center;
   box-sizing: border-box;
   width: 300px;
-  opacity: 0.9;
+  max-width: 75vw;
+  opacity: 0.95;
 }
 
 .BOversion {
   position: absolute;
-  color: rgb(182, 182, 182);
+  color: rgb(120, 120, 120);
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 50%);
