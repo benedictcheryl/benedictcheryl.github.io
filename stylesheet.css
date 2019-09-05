@@ -68,16 +68,17 @@ h3 {
 
 .BOlogo {
   position: absolute;
-  top: 20%;
+  top: 5%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  height: 35vh;
+  transform: translate(-50%, 0%);
+  height: 40vh;
+  min-height: 120px;
 }
 
 .BOform {
   position: absolute;
   color: white;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, 0%);
 }
