@@ -31,22 +31,19 @@ h3 {
 }
 
 /* === Overlay for passcode === */
-#overlay {
-  color: white;
-}
-
 .blackout {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,1);
+  background-color: rgb(100,100,100);
   z-index: 10000;
+  color: white;
 }
 
 .BOinit {
-  background-color: rgba(0,0,0,1);
+  background-color: rgb(100,100,100);
 }
 
 .disappear {
@@ -69,12 +66,39 @@ h3 {
   transform: translate(-50%, -50%);
 }
 
+.BOlogo {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: auto;
+}
+
 .BOform {
   position: absolute;
   color: white;
-  top: 40%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+#inviteCode {
+  padding: 10px 10px;
+  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  text-align: center;
+  box-sizing: border-box;
+  width: 300px;
+  opacity: 0.8;
+}
+
+.BOsubmitButton {
+  padding: 10px 10px;
+  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  text-align: center;
+  box-sizing: border-box;
+  width: 300px;
+  opacity: 0.9;
 }
 
 .BOversion {
@@ -321,12 +345,12 @@ h3 {
 
   /* Countdown Timer */
   .counter {
-   position: absolute;
-   top: 29.6%;
+    position: absolute;
+    top: 29.6%;
     left: 50%;
-   transform: translate(-50%, -50%);
-   font-family: 'Shadows Into Light Two', cursive;
-   font-size: 3.45vw;
+    transform: translate(-50%, -50%);
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size: 3.45vw;
   }
 
   #navbar table td {
