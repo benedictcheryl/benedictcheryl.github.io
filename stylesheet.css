@@ -71,15 +71,15 @@ h3 {
   top: 20%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 24vmin;
+  height: 35vh;
 }
 
 .BOform {
   position: absolute;
   color: white;
-  top: 50%;
+  top: 40%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0%);
 }
 
 #inviteCode {
@@ -89,8 +89,10 @@ h3 {
   text-align: center;
   box-sizing: border-box;
   width: 300px;
-  max-width: 75vw;
   opacity: 0.8;
+  max-width: 75vw;
+  max-height: 25vh;
+  margin: 0 0 1vh;
 }
 
 .BOsubmitButton {
@@ -100,11 +102,13 @@ h3 {
   text-align: center;
   box-sizing: border-box;
   width: 300px;
-  max-width: 75vw;
   opacity: 0.95;
+  max-width: 75vw;
+  max-height: 25vh;
 }
 
 .BOversion {
+  font-size: 2vmin;
   position: absolute;
   color: rgb(120, 120, 120);
   bottom: 5%;
