@@ -37,13 +37,13 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgb(150,150,150);
+  background-color: #dcf1f7;
   z-index: 10000;
   color: white;
 }
 
 .BOinit {
-  background-color: rgb(150,150,150);
+  background-color: #dcf1f7;
 }
 
 .disappear {
@@ -68,11 +68,11 @@ h3 {
 
 .BOlogo {
   position: absolute;
-  top: 5%;
+  top: 7.5%;
   left: 50%;
   transform: translate(-50%, 0%);
-  height: 40vh;
-  min-height: 120px;
+  height: 35vh;
+  min-height: 50px; 
 }
 
 .BOform {
@@ -106,6 +106,10 @@ h3 {
   opacity: 0.95;
   max-width: 75vw;
   max-height: 25vh;
+}
+
+.BOsubmitButton:hover {
+  opacity: 0.7; /* edit this? */
 }
 
 .BOversion {
@@ -147,7 +151,7 @@ h3 {
     top: 28.3%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Shadows Into Light Two', cursive;
+    font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
     font-size: 1.8vw;
 }
 
@@ -160,7 +164,7 @@ h3 {
 /* === Style the navbar (and related stuff) ==== */
 #navbar {
     overflow: hidden;
-    background-color: rgb(240, 240, 240);
+    background-color: #dcf1f7;
     z-index: 100; 
     position: fixed;
     top: 0;
@@ -176,7 +180,8 @@ h3 {
   max-width: 19.9vw;
   height: 35px;
   padding: 3px 1.8vw 3px 1.8vw;
-  font-size: 1.1vw;
+  font-size: 1.2vw;
+  font-family: 'Shadows Into Light Two', 'Merriweather', Times, serif;
 }
 
 #navbar a {
@@ -319,7 +324,7 @@ h3 {
 
 .credits {
   background-color: rgb(100, 100, 100);
-  color: rgb(240, 240, 240);
+  color: #e0e0e0;
   padding: 10px 20px 0px 20px;
   font-size: 12px;
   line-height:90%;
@@ -364,7 +369,7 @@ h3 {
   #navbar table td {
     height: 25px;
     padding: 3px 0.1vw 3px 4.5vw;
-    font-size: 2.4vw;
+    font-size: 2.5vw;
   }
 
   .navbarlogo {
@@ -421,8 +426,6 @@ h3 {
   }
 
   .credits {
-    background-color: rgb(100, 100, 100);
-    color: white;
     padding: 10px 20px 10px 20px;
     font-size: 12px;
     line-height: 90%;
@@ -468,7 +471,7 @@ h3 {
 
   #navbar table td {
     padding: 3px 1vw 3px 3vw;
-    font-size: 1.4vw;
+    font-size: 1.5vw;
   }
   
 
