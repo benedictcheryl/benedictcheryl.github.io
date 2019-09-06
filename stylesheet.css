@@ -30,6 +30,11 @@ h3 {
   font-size: 2.5vw;
 }
 
+/* Section banner */
+.sectionBanner {
+  background: white; /* modify this!! */
+}
+
 /* === Overlay for passcode === */
 .blackout {
   position: fixed;
@@ -368,8 +373,8 @@ h3 {
 
   #navbar table td {
     height: 25px;
-    padding: 3px 0.1vw 3px 4.5vw;
-    font-size: 2.5vw;
+    padding: 3px 0.05vw 3px 4.5vw;
+    font-size: 2.6vw;
   }
 
   .navbarlogo {
