@@ -17,6 +17,73 @@ h1 {
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
 
+/* === Title Animation === */
+@keyframes textflash {
+  0%, 80%, 100% {color: black;}
+  90% {color: rgb(192, 147, 0);}
+}
+
+.name_B{
+  animation: textflash 5s infinite linear;
+}
+
+.name_e1{
+  animation: textflash 5s infinite ease-in-out 0.05s;
+}
+
+.name_n{
+  animation: textflash 5s infinite ease-in-out 0.1s;
+}
+
+.name_e2{
+  animation: textflash 5s infinite ease-in-out 0.15s;
+}
+
+.name_d{
+  animation: textflash 5s infinite ease-in-out 0.2s;
+}
+
+.name_i{
+  animation: textflash 5s infinite ease-in-out 0.25s;
+}
+
+.name_c{
+  animation: textflash 5s infinite ease-in-out 0.3s;
+}
+
+.name_t{
+  animation: textflash 5s infinite ease-in-out 0.35s;
+}
+
+.name_and{
+  animation: textflash 5s infinite ease-in-out 0.4s;
+}
+
+.name_C{
+  animation: textflash 5s infinite ease-in-out 0.45s;
+}
+
+.name_h{
+  animation: textflash 5s infinite ease-in-out 0.5s;
+}
+
+.name_e3{
+  animation: textflash 5s infinite ease-in-out 0.55s;
+}
+
+.name_r {
+  animation: textflash 5s infinite ease-in-out 0.6s;
+}
+
+.name_y{
+  animation: textflash 5s infinite ease-in-out 0.65s;
+}
+
+.name_l{
+  animation: textflash 5s infinite ease-in-out 0.7s;
+}
+
+
 /* Section headers */
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
@@ -33,7 +100,7 @@ h3 {
 
 /* Section banner */
 .sectionBanner {
-  background: linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 50%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 40%, rgb(255,255,255,0) 60%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
   margin: 0px;
 }
 
@@ -159,10 +226,10 @@ h3 {
   
 /* Ben and Cheryl */
 .names {
-    position: absolute;
-    top: 11.3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 11.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Date */
