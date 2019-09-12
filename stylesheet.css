@@ -19,68 +19,72 @@ h1 {
 
 /* === Title Animation === */
 @keyframes textflash {
-  0%, 80%, 100% {color: black;}
-  90% {color: rgb(192, 147, 0);}
+  0%, 25%, 100% {color: black; opacity:1;}
+  80% {color: black; opacity: 0.05;}
+  85% {color: rgb(192, 147, 0); opacity:1;}
+  83% {color: rgb(255, 196, 0); opacity:1;}
+  82% {color: rgb(255, 228, 139); opacity:1;}
+  81% {color: rgb(255, 241, 196); opacity:1;}
 }
 
 .name_B{
-  animation: textflash 5s infinite linear;
+  animation: textflash 7s infinite linear;
 }
 
 .name_e1{
-  animation: textflash 5s infinite ease-in-out 0.05s;
+  animation: textflash 7s infinite linear 0.03s;
 }
 
 .name_n{
-  animation: textflash 5s infinite ease-in-out 0.1s;
+  animation: textflash 7s infinite linear 0.06s;
 }
 
 .name_e2{
-  animation: textflash 5s infinite ease-in-out 0.15s;
+  animation: textflash 7s infinite linear 0.09s;
 }
 
 .name_d{
-  animation: textflash 5s infinite ease-in-out 0.2s;
+  animation: textflash 7s infinite linear 0.12s;
 }
 
-.name_i{
-  animation: textflash 5s infinite ease-in-out 0.25s;
+.name_i{  
+  animation: textflash 7s infinite linear 0.15s;
 }
 
 .name_c{
-  animation: textflash 5s infinite ease-in-out 0.3s;
+  animation: textflash 7s infinite linear 0.18s;
 }
 
 .name_t{
-  animation: textflash 5s infinite ease-in-out 0.35s;
+  animation: textflash 7s infinite linear 0.21s;
 }
 
 .name_and{
-  animation: textflash 5s infinite ease-in-out 0.4s;
+  animation: textflash 7s infinite linear 0.24s;
 }
 
 .name_C{
-  animation: textflash 5s infinite ease-in-out 0.45s;
+  animation: textflash 7s infinite linear 0.27s;
 }
 
 .name_h{
-  animation: textflash 5s infinite ease-in-out 0.5s;
+  animation: textflash 7s infinite linear 0.3s;
 }
 
 .name_e3{
-  animation: textflash 5s infinite ease-in-out 0.55s;
+  animation: textflash 7s infinite linear 0.33s;
 }
 
 .name_r {
-  animation: textflash 5s infinite ease-in-out 0.6s;
+  animation: textflash 7s infinite linear 0.36s;
 }
 
 .name_y{
-  animation: textflash 5s infinite ease-in-out 0.65s;
+  animation: textflash 7s infinite linear 0.39s;
 }
 
 .name_l{
-  animation: textflash 5s infinite ease-in-out 0.7s;
+  animation: textflash 7s infinite linear 0.42s;
 }
 
 
@@ -100,7 +104,8 @@ h3 {
 
 /* Section banner */
 .sectionBanner {
-  background: linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 40%, rgb(255,255,255,0) 60%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 35%, rgb(255,255,255,0) 65%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: -ms-linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 35%, rgb(255,255,255,0) 65%, white 90%), -ms-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
   margin: 0px;
 }
 
@@ -415,6 +420,27 @@ h3 {
   padding: 0px;
 }
 
+/* === RSVP === */
+
+.rsvpBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  align-items: center; /* fix this! */
+}
+
+.rsvpCell {
+  width: 15%;
+  padding: 10px;
+  margin: 10px 1vw;
+  border-style: solid;
+  box-sizing: border-box;
+}
+
+
 /* === Credits === */
 
 .credits {
@@ -429,6 +455,8 @@ h3 {
   visibility: hidden;
   font-size: 0px;
 }
+
+
 
 /* === Mobile Styles === */
 @media only screen and (min-width: 0px) and (max-width: 768px) {

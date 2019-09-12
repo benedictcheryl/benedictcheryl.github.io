@@ -17,12 +17,82 @@ h1 {
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
 
+/* === Title Animation === */
+@keyframes textflash {
+  0%, 25%, 100% {color: black; opacity:1;}
+  80% {color: black; opacity: 0.05;}
+  85% {color: rgb(192, 147, 0); opacity:1;}
+  83% {color: rgb(255, 196, 0); opacity:1;}
+  82% {color: rgb(255, 228, 139); opacity:1;}
+  81% {color: rgb(255, 241, 196); opacity:1;}
+}
+
+.name_B{
+  animation: textflash 7s infinite linear;
+}
+
+.name_e1{
+  animation: textflash 7s infinite linear 0.03s;
+}
+
+.name_n{
+  animation: textflash 7s infinite linear 0.06s;
+}
+
+.name_e2{
+  animation: textflash 7s infinite linear 0.09s;
+}
+
+.name_d{
+  animation: textflash 7s infinite linear 0.12s;
+}
+
+.name_i{  
+  animation: textflash 7s infinite linear 0.15s;
+}
+
+.name_c{
+  animation: textflash 7s infinite linear 0.18s;
+}
+
+.name_t{
+  animation: textflash 7s infinite linear 0.21s;
+}
+
+.name_and{
+  animation: textflash 7s infinite linear 0.24s;
+}
+
+.name_C{
+  animation: textflash 7s infinite linear 0.27s;
+}
+
+.name_h{
+  animation: textflash 7s infinite linear 0.3s;
+}
+
+.name_e3{
+  animation: textflash 7s infinite linear 0.33s;
+}
+
+.name_r {
+  animation: textflash 7s infinite linear 0.36s;
+}
+
+.name_y{
+  animation: textflash 7s infinite linear 0.39s;
+}
+
+.name_l{
+  animation: textflash 7s infinite linear 0.42s;
+}
+
 /* Section headers */
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
  font-size: 30px;
- margin: 30px 10px 30px 10px;
  padding: 30px 10px 30px 10px;
+ margin: 0px;
 }
 
 /* Wedding date */
@@ -31,69 +101,22 @@ h3 {
   font-size: 2.5vw;
 }
 
-/* === Parallax scrolling stuff === */
-
-/* layout */
-.wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 420px;
-}
-
-/* Parallax Styles */
-.parallax-container {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  perspective: 8px;
-  perspective-origin: 0%;
-  display: flex;
-}
-
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transform: translateZ(0px);
-}
-
-.foreground {
-  margin-top: auto;
-  margin-bottom: 50px;
-  
-  transform-origin: 0;
-  transform: translateZ(3px) scale(0.625);
-  
-  /* Uncomment the code below to see the difference the scale property makes! */
-  /* transform: translateZ(3px); */
-  /* transform: translateZ(0) scale(1); */
-}
-
-.mainParallaxSection {
-  position: static;
-}
-
 /* Section banner */
 .sectionBanner {
-  width: 100%;
-  box-sizing: border-box;
-  border-style: solid;
-  background-color: pink;
-  overflow: hidden;
+  background: linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: -webkit-linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), -webkit-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: -moz-linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), -moz-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  margin: 0px;
 }
 
-.sectionBanner img {
-  width: 100%;
-  top: 50%;
-  left: 0%;
-  transform: translate(0, -50%);
-  position: absolute;
+.sectionBanner_0 {
+  margin: 0px;
 }
 
+/* Main background */
+.mainBG {
+  background: white;
+}
 
 /* === Overlay for passcode === */
 .blackout {
@@ -138,6 +161,15 @@ h3 {
   transform: translate(-50%, 0%);
   height: 35vh;
   min-height: 50px; 
+}
+
+.animateLogo {
+  animation: logoflash 10s infinite ease-in-out;
+}
+
+@keyframes logoflash {
+  0%, 100% {opacity: 0;}
+  50% {opacity: 1;}
 }
 
 .BOform {
@@ -200,18 +232,30 @@ h3 {
     height: 74vw;
 }
 
-.homePic {
-  max-width: 100%;
+.absoluteBG {
+  z-index: -1;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
-  
+
+.homePic {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  z-index: -2;
+  opacity: 0;
+}
+
 /* Ben and Cheryl */
 .names {
-    position: absolute;
-    top: 11.3%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 11.3%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 /* Date */
@@ -242,7 +286,7 @@ h3 {
 #navbar {
     overflow: hidden;
     background-color: #dcf1f7;
-    z-index: 100000; 
+    z-index: 10; 
     position: fixed;
     top: 0;
     width: 100%;
@@ -285,7 +329,7 @@ h3 {
 .offsetanchor {
   display: block;
   position: relative;
-  top: -35px;
+  top: -40px;
   visibility: hidden;
 }
 
@@ -319,6 +363,14 @@ h3 {
   font-size: 2.6vw;
   text-shadow: 0.05vw 0.05vw 0.08vw #aaa;
   text-emphasis: bold;
+}
+
+/* === Transition Section === */
+
+.transitionSection {
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
 }
 
 /* === Our Story === */
@@ -359,7 +411,7 @@ h3 {
 }
 
 .memoriesOffsetAnchor {
-  top: -50px;
+  top: -40px;
 }
 
 /* === Details === */
@@ -397,6 +449,27 @@ h3 {
   padding: 0px;
 }
 
+/* === RSVP === */
+
+.rsvpBox {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  align-items: center; /* fix this! */
+}
+
+.rsvpCell {
+  width: 15%;
+  padding: 10px;
+  margin: 10px 1vw;
+  border-style: solid;
+  box-sizing: border-box;
+}
+
+
 /* === Credits === */
 
 .credits {
@@ -411,6 +484,8 @@ h3 {
   visibility: hidden;
   font-size: 0px;
 }
+
+
 
 /* === Mobile Styles === */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
@@ -477,12 +552,12 @@ h3 {
   .offsetanchor {
     display: block;
     position: relative;
-    top: -25px;
+    top: -30px;
     visibility: hidden;
   }
 
   .memoriesOffsetAnchor {
-    top: -40px;
+    top: -30px;
   }
 
   .detailsCell {
