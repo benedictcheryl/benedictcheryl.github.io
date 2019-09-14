@@ -12,7 +12,7 @@ body {
 /* Ben and Cheryl */
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 4.5vw;
+  font-size: 4.5vmin;
   transform: scale(2);
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
@@ -98,7 +98,7 @@ h2 {
 /* Wedding date */
 h3 {
   font-family: 'Shadows Into Light Two', Times, cursive;
-  font-size: 2.5vw;
+  font-size: 2.5vmin;
 }
 
 /* Section banner */
@@ -222,32 +222,27 @@ h3 {
 /* Container holding the image and the text */
 #home {
     position: relative;
-    text-align: center;
     color: black;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
     width: 100%;
-    height: 74vw;
+    height: 100vh;
 }
 
 .absoluteBG {
   z-index: -1;
   position: fixed;
-  left: 0;
-  top: 0;
+  height: 100vh;
   width: 100%;
   margin: 0;
   padding: 0;
-}
 
-.homePic {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  z-index: -2;
-  opacity: 0;
+  background-image: url("pics/tenerife.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Ben and Cheryl */
@@ -273,7 +268,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
-    font-size: 1.8vw;
+    font-size: 1.8vmin;
 }
 
 #navanchor {
@@ -368,7 +363,7 @@ h3 {
 /* === Transition Section === */
 
 .transitionSection {
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, white 99%);
   background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
   background: -moz-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
 }
@@ -491,7 +486,7 @@ h3 {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 5.2vw;
+    font-size: 5.2vmin;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -505,7 +500,7 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 4.7vw;
+    font-size: 4.7vmin;
   }
 
   /* Countdown Timer */
@@ -515,7 +510,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 3.45vw;
+    font-size: 3.45vmin;
   }
 
   #navbar table td {
@@ -594,7 +589,7 @@ h3 {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 5vw;
+    font-size: 5vmin;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -608,7 +603,7 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 3vw;
+    font-size: 3vmin;
   }
 
   /* Countdown Timer */
@@ -618,7 +613,7 @@ h3 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 2.27vw;
+    font-size: 2.27vmin;
   }
 
   #navbar table td {
