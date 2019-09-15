@@ -12,7 +12,7 @@ body {
 /* Ben and Cheryl */
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 4.5vmin;
+  font-size: 4vw;
   transform: scale(2);
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
@@ -98,7 +98,7 @@ h2 {
 /* Wedding date */
 h3 {
   font-family: 'Shadows Into Light Two', Times, cursive;
-  font-size: 2.5vmin;
+  font-size: 2.3vw;
 }
 
 /* Section banner */
@@ -240,7 +240,7 @@ h3 {
   padding: 0;
 
   background-image: url("pics/tenerife.jpg");
-  background-position: center center;
+  background-position: center 30%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -248,7 +248,7 @@ h3 {
 /* Ben and Cheryl */
 .names {
   position: absolute;
-  top: 11.3%;
+  top: 11.8%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -256,7 +256,7 @@ h3 {
 /* Date */
 .date {
     position: absolute;
-    top: 23.8%;
+    top: 26.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -264,11 +264,11 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 28.3%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
-    font-size: 1.8vmin;
+    font-size: 1.6vw;
 }
 
 #navanchor {
@@ -500,17 +500,17 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 4.7vmin;
+    font-size: 4.3vmin;
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 29.6%;
+    top: 31.2%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 3.45vmin;
+    font-size: 3.1vmin;
   }
 
   #navbar table td {
@@ -589,7 +589,7 @@ h3 {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 5vmin;
+    font-size: 4.3vw;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -603,17 +603,17 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 3vmin;
+    font-size: 2.8vw;
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 29%;
+    top: 32%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 2.27vmin;
+    font-size: 2vw;
   }
 
   #navbar table td {
