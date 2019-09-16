@@ -12,7 +12,7 @@ body {
 /* Ben and Cheryl */
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 4vw;
+  font-size: 3.5vw;
   transform: scale(2);
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
@@ -103,9 +103,9 @@ h3 {
 
 /* Section banner */
 .sectionBanner {
-  background: linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
-  background: -webkit-linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), -webkit-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
-  background: -moz-linear-gradient(to bottom, white 10%, rgba(255,255,255,0) 35%, rgba(255,255,255,0) 65%, white 90%), -moz-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
+  background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
+  background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
   margin: 0px;
 }
 
@@ -115,7 +115,7 @@ h3 {
 
 /* Main background */
 .mainBG {
-  background: white;
+  background: rgba(255,255,255,0.95);
 }
 
 /* === Overlay for passcode === */
@@ -248,7 +248,7 @@ h3 {
 /* Ben and Cheryl */
 .names {
   position: absolute;
-  top: 11.8%;
+  top: 12.5%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -256,7 +256,7 @@ h3 {
 /* Date */
 .date {
     position: absolute;
-    top: 26.8%;
+    top: 29.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -264,11 +264,11 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 32%;
+    top: 35.2%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
-    font-size: 1.6vw;
+    font-size: 1.65vw;
 }
 
 #navanchor {
@@ -363,9 +363,9 @@ h3 {
 /* === Transition Section === */
 
 .transitionSection {
-  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, white 99%);
-  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
-  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0) 5%, white 95%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.95));
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.95));
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.95));
 }
 
 /* === Our Story === */
@@ -486,7 +486,7 @@ h3 {
 @media only screen and (min-width: 0px) and (max-width: 768px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 5.2vmin;
+    font-size: 6.5vmin;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -500,17 +500,24 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 4.3vmin;
+    font-size: 5.45vmin;
+  }
+
+  .date {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 31.2%;
+    top: 29.8%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 3.1vmin;
+    font-size: 4vmin;
   }
 
   #navbar table td {
@@ -589,7 +596,7 @@ h3 {
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 4.3vw;
+    font-size: 5.4vmin;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -603,18 +610,26 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 2.8vw;
+    font-size: 4.3vmin;
+  }
+  
+  .date {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 32%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 2vw;
+    font-size: 3.15vmin;
   }
+
 
   #navbar table td {
     padding: 3px 1vw 3px 3vw;
