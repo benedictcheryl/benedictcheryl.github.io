@@ -412,7 +412,7 @@ h3 {
   font-family: "Reenie Beanie", 'Merriweather', Times, serif;
   text-align: center;
   margin: 0px 15px;
-  font-size: 24px;
+  font-size: 26px;
 }
 
 /* === Our Memories === */
@@ -641,7 +641,7 @@ h3 {
 /* === Tablet Styles === */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
   body{
-    font-size: 16px;
+    font-size: 17px;
   }
   
   h1 {
@@ -693,6 +693,10 @@ h3 {
 
   .datelogo {
     font-size: 3.22vw;
+  }
+
+  .poem {
+    font-size: 24px;
   }
 }
 
