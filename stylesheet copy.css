@@ -130,15 +130,15 @@ h3 {
 }
 
 .sectionBanner_0 {
-  background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
-  background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
-  background: linear-gradient(to bottom, transparent, rgba(220,241,247,0.5) 50%, rgba(255,255,255,0.5));
+  background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
+  background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
+  background: linear-gradient(to bottom, transparent, rgba(220,241,247,0.5) 50%, rgba(255,255,255,0.6));
   margin: 0px;
 }
 
 /* Main background */
 .mainBG {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255,255,255,0.92);
 }
 
 /* === Overlay for passcode === */
@@ -396,9 +396,9 @@ h3 {
 /* === Transition Section === */
 
 .transitionSection {
-  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.95));
-  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,0.95));
-  background: linear-gradient(to bottom, rgba(255,255,255,0.5), rgba(255,255,255,0.95));
+  background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
+  background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
 }
 
 /* === Our Story === */
@@ -487,21 +487,43 @@ h3 {
 /* === RSVP === */
 
 .rsvpBox {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+  /*display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: row;*/
   width: 100%;
   padding: 0px;
-  margin: 0px;
-  align-items: center; /* fix this! */
+  margin: 15px auto;
+  border-style: solid;
+  box-sizing: border-box;
 }
 
 .rsvpCell {
-  width: 15%;
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 16vw;
   padding: 10px;
   margin: 10px 1vw;
   border-style: solid;
   box-sizing: border-box;
+  text-align: center;
+}
+
+.rsvpButton {
+  padding: 10px 100px;
+  font-family: 'Shadows Into Light Two', 'Merriweather', "Times New Roman", Times, serif;
+  font-size: 18px;
+  text-align: center;
+  box-sizing: border-box;
+  max-width: 90vw;
+  max-height: 15vw;
+  opacity: 1;
+}
+
+.rsvpButton:hover {
+ opacity: 0.7;
 }
 
 
