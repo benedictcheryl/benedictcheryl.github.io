@@ -126,6 +126,7 @@ h3 {
   background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
   background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
   background: linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, transparent);
+  background: rgba(220,241,247,0.7);
   margin: 0px;
 }
 
@@ -133,12 +134,13 @@ h3 {
   background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
   background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
   background: linear-gradient(to bottom, transparent, rgba(220,241,247,0.5) 50%, rgba(255,255,255,0.6));
+  background: rgba(220,241,247,0.7);
   margin: 0px;
 }
 
 /* Main background */
 .mainBG {
-  background: rgba(255,255,255,0.92);
+  background: rgba(255,255,255,1);
 }
 
 /* === Overlay for passcode === */
@@ -398,7 +400,8 @@ h3 {
 .transitionSection {
   background: -webkit-linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
   background: -moz-linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
-  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.92));
+  background: linear-gradient(to bottom, rgba(255,255,255,0.6), rgba(255,255,255,0.1));
+  background: white;
 }
 
 /* === Our Story === */

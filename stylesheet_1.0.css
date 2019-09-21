@@ -2,7 +2,7 @@ body {
   text-align: center;
   font-family: 'Merriweather', "Times New Roman", Times, serif;
   color: #111111;
-  font-size: 18px;
+  font-size: 15px;
   margin: 0;
   line-height: 120%;
   padding: 0;
@@ -12,30 +12,12 @@ body {
 /* Ben and Cheryl */
 h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
-  font-size: 3.5vw;
+  font-size: 4.5vw;
   transform: scale(2);
   text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
 }
 
 /* === Title Animation === */
-@-moz-keyframes textflash {
-  0%, 25%, 100% {color: black; opacity:1;}
-  80% {color: black; opacity: 0.05;}
-  85% {color: rgb(192, 147, 0); opacity:1;}
-  83% {color: rgb(255, 196, 0); opacity:1;}
-  82% {color: rgb(255, 228, 139); opacity:1;}
-  81% {color: rgb(255, 241, 196); opacity:1;}
-}
-
-@-webkit-keyframes textflash {
-  0%, 25%, 100% {color: black; opacity:1;}
-  80% {color: black; opacity: 0.05;}
-  85% {color: rgb(192, 147, 0); opacity:1;}
-  83% {color: rgb(255, 196, 0); opacity:1;}
-  82% {color: rgb(255, 228, 139); opacity:1;}
-  81% {color: rgb(255, 241, 196); opacity:1;}
-}
-
 @keyframes textflash {
   0%, 25%, 100% {color: black; opacity:1;}
   80% {color: black; opacity: 0.05;}
@@ -105,40 +87,26 @@ h1 {
   animation: textflash 7s infinite linear 0.42s;
 }
 
+
 /* Section headers */
 h2 {
  font-family: 'Shadows Into Light Two', Times, cursive;
- color: black;
- text-shadow: 1px 1px 1px #aaa;
- font-size: 35px;
- padding: 40px 10px 40px 10px;
+ font-size: 30px;
+ padding: 30px 10px 30px 10px;
  margin: 0px;
 }
 
 /* Wedding date */
 h3 {
   font-family: 'Shadows Into Light Two', Times, cursive;
-  font-size: 2.3vw;
+  font-size: 2.5vw;
 }
 
 /* Section banner */
 .sectionBanner {
-  background: -webkit-linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 10%, transparent);
-  background: -moz-linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 10%, transparent);
-  background: linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 10%, transparent);
+  background: linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 35%, rgb(255,255,255,0) 65%, white 90%), linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
+  background: -ms-linear-gradient(to bottom, white 10%, rgb(255,255,255,0) 35%, rgb(255,255,255,0) 65%, white 90%), -ms-linear-gradient(to right,white 20%,#dcf1f7 50%, white 80%);
   margin: 0px;
-}
-
-.sectionBanner_0 {
-  background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
-  background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 50%, rgba(255,255,255,0.6));
-  background: linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 10%, rgba(255,255,255,0.92));
-  margin: 0px;
-}
-
-/* Main background */
-.mainBG {
-  background: rgba(255,255,255,0.92);
 }
 
 /* === Overlay for passcode === */
@@ -188,16 +156,6 @@ h3 {
 
 .animateLogo {
   animation: logoflash 10s infinite ease-in-out;
-}
-
-@-moz-keyframes logoflash {
-  0%, 100% {opacity: 0;}
-  50% {opacity: 1;}
-}
-
-@-webkit-keyframes logoflash {
-  0%, 100% {opacity: 0;}
-  50% {opacity: 1;}
 }
 
 @keyframes logoflash {
@@ -255,33 +213,26 @@ h3 {
 /* Container holding the image and the text */
 #home {
     position: relative;
+    text-align: center;
     color: black;
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
     overflow: hidden;
     width: 100%;
-    height: 100vh;
+    height: 74vw;
 }
 
-.absoluteBG {
-  z-index: -1;
-  position: fixed;
-  height: 100vh;
-  width: 100%;
+.homePic {
+  max-width: 100%;
   margin: 0;
   padding: 0;
-
-  background-image: url("pics/tenerife.jpg");
-  background-position: center 30%;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-
+  
 /* Ben and Cheryl */
 .names {
   position: absolute;
-  top: 12.5%;
+  top: 11.3%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
@@ -289,7 +240,7 @@ h3 {
 /* Date */
 .date {
     position: absolute;
-    top: 29.5%;
+    top: 23.8%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -297,23 +248,23 @@ h3 {
 /* Countdown Timer */
 .counter {
     position: absolute;
-    top: 35.2%;
+    top: 28.3%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
-    font-size: 1.65vw;
+    font-size: 1.8vw;
 }
 
 #navanchor {
   display: block;
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
 }
 
 /* === Style the navbar (and related stuff) ==== */
 #navbar {
     overflow: hidden;
-    background-color:#c2eefa;
+    background-color: #dcf1f7;
     z-index: 10; 
     position: fixed;
     top: 0;
@@ -393,24 +344,11 @@ h3 {
   text-emphasis: bold;
 }
 
-/* === Transition Section === */
-
-.transitionSection {
-  background: rgba(255,255,255,0.92);
-}
-
 /* === Our Story === */
 
-.ourStoryText {
-  text-align: justify;
-  margin: 0px 30px;
-}
-
 .poem {
-  font-family: "Reenie Beanie", 'Merriweather', Times, serif;
   text-align: center;
   margin: 0px 15px;
-  font-size: 26px;
 }
 
 /* === Our Memories === */
@@ -485,43 +423,21 @@ h3 {
 /* === RSVP === */
 
 .rsvpBox {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  /*display: flex;
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;*/
+  flex-direction: row;
   width: 100%;
   padding: 0px;
-  margin: 15px auto;
-  border-style: solid;
-  box-sizing: border-box;
+  margin: 0px;
+  align-items: center; /* fix this! */
 }
 
 .rsvpCell {
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  width: 16vw;
+  width: 15%;
   padding: 10px;
   margin: 10px 1vw;
   border-style: solid;
   box-sizing: border-box;
-  text-align: center;
-}
-
-.rsvpButton {
-  padding: 10px 100px;
-  font-family: 'Shadows Into Light Two', 'Merriweather', "Times New Roman", Times, serif;
-  font-size: 18px;
-  text-align: center;
-  box-sizing: border-box;
-  max-width: 90vw;
-  max-height: 15vw;
-  opacity: 1;
-}
-
-.rsvpButton:hover {
- opacity: 0.7;
 }
 
 
@@ -529,7 +445,7 @@ h3 {
 
 .credits {
   background-color: rgb(100, 100, 100);
-  color: rgb(223, 223, 223);
+  color: #e0e0e0;
   padding: 10px 20px 0px 20px;
   font-size: 12px;
   line-height:90%;
@@ -544,13 +460,9 @@ h3 {
 
 /* === Mobile Styles === */
 @media only screen and (min-width: 0px) and (max-width: 768px) {
-  body{
-    font-size: 15px;
-  }
-  
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 6.5vmin;
+    font-size: 5.2vw;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -558,30 +470,23 @@ h3 {
   /* Section headers */
   h2 {
     font-family: 'Shadows Into Light Two', Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 22px;
   }
  
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 5.45vmin;
-  }
-
-  .date {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 4.7vw;
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 29.8%;
+    top: 29.6%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 4vmin;
+    font-size: 3.45vw;
   }
 
   #navbar table td {
@@ -609,6 +514,12 @@ h3 {
     font-size: 0;
   }
 
+  #navanchor {
+    display: block;
+    position: absolute;
+    bottom: 20%;
+  }
+
   .offsetanchor {
     display: block;
     position: relative;
@@ -618,14 +529,6 @@ h3 {
 
   .memoriesOffsetAnchor {
     top: -30px;
-  }
-
-  .ourStoryText {
-    margin: 0px 15px;
-  }
-
-  .poem {
-    font-size: 22px;
   }
 
   .detailsCell {
@@ -660,13 +563,9 @@ h3 {
 
 /* === Tablet Styles === */
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-  body{
-    font-size: 17px;
-  }
-  
   h1 {
     font-family: 'Reenie Beanie', Garamond, cursive;
-    font-size: 5.4vmin;
+    font-size: 5vw;
     transform: scale(2);
     text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
   }
@@ -680,26 +579,18 @@ h3 {
  /* Wedding date */
   h3 {
     font-family: 'Shadows Into Light Two', Times, serif;
-    font-size: 4.3vmin;
-  }
-  
-  .date {
-    position: absolute;
-    top: 25%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-size: 3vw;
   }
 
   /* Countdown Timer */
   .counter {
     position: absolute;
-    top: 28.5%;
+    top: 29%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
-    font-size: 3.15vmin;
+    font-size: 2.27vw;
   }
-
 
   #navbar table td {
     padding: 3px 1vw 3px 3vw;
@@ -713,10 +604,6 @@ h3 {
 
   .datelogo {
     font-size: 3.22vw;
-  }
-
-  .poem {
-    font-size: 24px;
   }
 }
 
