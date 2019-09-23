@@ -142,6 +142,9 @@ h3 {
 .mainBG {
   background: rgba(255,255,255,0.92);
   width: 100%;
+  background-size: 150vw;
+  background-position: center;
+  overflow-x: visible;
 }
 
 /* === Overlay for passcode === */
@@ -404,6 +407,7 @@ h3 {
   width: 100%;
   background-size: 150vw;
   background-position: center;
+  overflow-x: visible;
 }
 
 /* === Our Story === */
