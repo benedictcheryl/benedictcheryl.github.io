@@ -274,6 +274,7 @@ h3 {
   width: 100%;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 
   background-image: url("pics/tenerife.jpg");
   background-position: center 30%;
@@ -401,6 +402,8 @@ h3 {
 .transitionSection {
   background: rgba(255,255,255,0.92);
   width: 100%;
+  background-size: 150vw;
+  background-position: center;
 }
 
 /* === Our Story === */
