@@ -417,6 +417,12 @@ h3 {
   margin: 0px 30px;
 }
 
+.poem {
+  font-family: "Reenie Beanie", 'Merriweather', Times, serif;
+  text-align: center;
+  margin: 0px 15px;
+  font-size: 26px;
+}
 
 /* === Our Memories === */
 .memoriesContainer {
@@ -426,35 +432,9 @@ h3 {
   gap: 0;
 }
 
-.memoriesTextCell {
-  width: calc(100%/3);
-  height: 33vw;
-  gap: 0;
-  padding: 5px 5px;
-  margin: 0;
-  overflow: hidden;
-  box-sizing: border-box;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url("pics/parchment_square.png");
-  background-position: center;
-  background-size: 38vw 38vw;cover;
-}
-
-.memoriesPoem {
-  font-family: "Reenie Beanie", 'Merriweather', Times, serif;
-  text-align: center;
-  font-size: 26px;
-  line-height: 100%;
-  padding: 0px;
-  margin: 0px;
-  box-sizing: border-box;
-}
-
 .memoriesImgCell {
   width: calc(100%/3);
-  height: 33vw;
+  height: 33.3333vw;
   gap: 0;
   padding: 0;
   margin: 0;
@@ -463,8 +443,8 @@ h3 {
 }
 
 .memoriesImgCell img {
-  width: 33.01vw;
-  height: 33.01vw;
+  width: 33.3334vw;
+  height: 33.3334vw;
   object-fit: fill;
   padding: 0;
   margin: 0;
@@ -656,25 +636,8 @@ h3 {
     margin: 0px 15px;
   }
 
-  .memoriesTextCell {
-    width: 100%;
-    height: 50vw;
-    padding: 15px 15px;
-    background-size: 50vw 50vw;cover;
-  }
-  
-  .memoriesPoem {
+  .poem {
     font-size: 22px;
-  }
-  
-  .memoriesImgCell {
-    width: 100%;
-    height: 50vw;
-  }
-  
-  .memoriesImgCell img {
-    width: 50vw;
-    height: 50vw;
   }
 
   .detailsCell {
@@ -682,7 +645,7 @@ h3 {
   }
 
   .detailsList {
-    padding: 5px 15px;
+    padding: 5px 15px 5px 15px;
     text-align: center;
   }
 
@@ -764,10 +727,9 @@ h3 {
     font-size: 3.22vw;
   }
 
-  .memoriesPoem {
-    font-size: 22px;
+  .poem {
+    font-size: 24px;
   }
-
 }
 
 /* === 4k Desktop Styles === */
