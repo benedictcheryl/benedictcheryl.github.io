@@ -542,8 +542,9 @@ h3 {
   background-color: rgb(100, 100, 100);
   color: rgb(223, 223, 223);
   padding: 10px 20px 0px 20px;
-  font-size: 12px;
-  line-height:90%;
+  font-size: 17px;
+  line-height: 50%;
+  font-family: 'Reenie Beanie', Garamond, cursive;
 }
 
 .mobileVersion {
@@ -658,13 +659,13 @@ h3 {
 
   .credits {
     padding: 10px 20px 10px 20px;
-    font-size: 12px;
+    font-size: 17px;
     line-height: 90%;
   }
   
   .mobileVersion {
     visibility: visible;
-    font-size: 9px;
+    font-size: 13px;
   }
 
 }
