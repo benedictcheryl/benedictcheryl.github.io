@@ -282,7 +282,8 @@ h3 {
   background-image: url("pics/tenerife.jpg");
   background-position: center 30%;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% auto; cover;
+
 }
 
 /* Ben and Cheryl */
@@ -430,7 +431,7 @@ h3 {
   width: calc(100%/3);
   height: 33vw;
   gap: 0;
-  padding: 5px 5px;
+  padding: 5px 10px;
   margin: 0;
   overflow: hidden;
   box-sizing: border-box;
@@ -439,7 +440,7 @@ h3 {
   justify-content: center;
   background-image: url("pics/parchment_square.png");
   background-position: center;
-  background-size: 38vw 38vw;cover;
+  background-size: 38vw 38vw;
 }
 
 .memoriesPoem {
@@ -656,25 +657,35 @@ h3 {
     margin: 0px 15px;
   }
 
-  .memoriesTextCell {
+  .memContBackward {
     width: 100%;
-    height: 50vw;
-    padding: 15px 15px;
-    background-size: 110vw 110vw;cover;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .memoriesTextCell {
+    width: 70%;
+    height: 40vw;
+    background-image: none;
   }
   
   .memoriesPoem {
-    font-size: 23px;
+    font-size: 22px;
   }
   
   .memoriesImgCell {
-    width: 100%;
-    height: 100vw;
+    width: 30%;
+    height: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .memoriesImgCell img {
-    width: 100vw;
-    height: 100vw;
+    width: 29vw;
+    height: 29vw;
   }
 
   .detailsCell {
