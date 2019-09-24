@@ -282,7 +282,7 @@ h3 {
   background-image: url("pics/tenerife.jpg");
   background-position: center 30%;
   background-repeat: no-repeat;
-  background-size: 100% auto; cover;
+  background-size: cover;
 
 }
 
@@ -416,6 +416,16 @@ h3 {
 .ourStoryText {
   text-align: justify;
   margin: 0px 30px;
+}
+
+.bibleVerse {
+  text-align: left;
+  border-top:0.7px solid grey;
+  border-bottom: 0.7px solid grey;
+  width: 40%;
+  margin: 30px auto;
+  font-size: 20px;
+  padding: 5px 1vw;
 }
 
 
@@ -657,17 +667,17 @@ h3 {
     margin: 0px 15px;
   }
 
-  .memContBackward {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-    gap: 0;
+  .bibleVerse {
+    width: 75%;
+    margin: 26px auto;
+    font-size: 17px;
+    padding: 3px 1vw;
   }
 
   .memoriesTextCell {
-    width: 70%;
-    height: 40vw;
+    width: 100%;
+    height: auto;
+    padding: 20px;
     background-image: none;
   }
   
@@ -676,16 +686,16 @@ h3 {
   }
   
   .memoriesImgCell {
-    width: 30%;
-    height: 40vw;
+    width: 100%;
+    height: 26vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   
   .memoriesImgCell img {
-    width: 29vw;
-    height: 29vw;
+    width: 23vw;
+    height: 23vw;
   }
 
   .detailsCell {
@@ -773,6 +783,13 @@ h3 {
 
   .datelogo {
     font-size: 3.22vw;
+  }
+
+  .bibleVerse {
+    width: 55%;
+    margin: 28px auto;
+    font-size: 19px;
+    padding: 4px 1vw;
   }
 
   .memoriesPoem {
