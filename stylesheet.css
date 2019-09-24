@@ -451,7 +451,7 @@ h3 {
   justify-content: center;
   background-image: url("pics/parchment_square.png");
   background-position: center;
-  background-size: 38vw 38vw;
+  background-size: cover;
 }
 
 .memoriesPoem {
@@ -472,6 +472,9 @@ h3 {
   margin: 0;
   border-style: none;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .memoriesImgCell img {
@@ -675,28 +678,44 @@ h3 {
     padding: 3px 1vw;
   }
 
+  .memoriesContainer {
+    background-image: url("pics/parchment_square.png");
+    background-position: center;
+    background-size: cover;
+  }
+
+  #pic1 {-webkit-order: 1; order: 1; }
+  #pic2 {-webkit-order: 2; order: 2; }
+  #pic3 {-webkit-order: 3; order: 3; }
+  #pic4 {-webkit-order: 8; order: 8; }
+  #pic5 {-webkit-order: 9; order: 9; }
+  #pic6 {
+    -webkit-order: 10; 
+    order: 10;
+    width: calc(100%/3);
+    height: 33vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(pics/y5b.jpg);
+    background-size: cover;
+    background-position: center center;
+  }
+
+  #poem1 {-webkit-order: 4; order: 4; margin-top: 18px;}
+  #poem2 {-webkit-order: 5; order: 5; }
+  #poem3 {-webkit-order: 6; order: 6; }
+  #poem4 {-webkit-order: 7; order: 7; margin-bottom: 18px;}
+
   .memoriesTextCell {
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 10px;
     background-image: none;
   }
   
   .memoriesPoem {
     font-size: 22px;
-  }
-  
-  .memoriesImgCell {
-    width: 100%;
-    height: 26vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .memoriesImgCell img {
-    width: 23vw;
-    height: 23vw;
   }
 
   .detailsCell {
