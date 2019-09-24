@@ -7,6 +7,7 @@ body {
   line-height: 120%;
   padding: 0;
   background-color: white;
+  overflow-x: hidden;
 }
 
 /* Ben and Cheryl */
