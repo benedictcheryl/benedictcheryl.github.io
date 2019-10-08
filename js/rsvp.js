@@ -8,7 +8,7 @@ var btn = document.getElementById("rsvpButton");
 var span = document.getElementsByClassName("close")[0];
 
 // Get the RSVP form
-var rsvp = document.getElementById("rsvpform");
+var rsvp = document.getElementById("rsvpForm");
 
 // When the user clicks on the button, open the modal 
 function checkRSVP() {
