@@ -9,7 +9,9 @@
     href="https://fonts.googleapis.com/css?family=Great+Vibes|Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/762c4f9e06.js"></script>
+  <script>
+    window.onscroll = function () { window.scrollTo(0, 0); };
+  </script>
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.serialize-object.min.js"></script>
   <script src="js/googleSheetScript.js"></script>
@@ -242,6 +244,7 @@
       </p>
       <form id="rsvpForm">
         <div class="rsvpBox" data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+          
           <div class="rsvpCell">
             <i class="fas fa-user"></i>
             <input type="text" name="Name" placeholder="Name">
@@ -288,6 +291,7 @@
         </div>
 
       </form>
+
       <p data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
         For any queries, or to modify your attendance, please contact us at xxx@gmail.com
       </p>
@@ -315,9 +319,7 @@
   <script src="js/bodyScrollLock.js"></script> <!-- still needed or not? -->
   <script src="js/initiate.js"></script>
   <script src="js/countdown.js"></script>
-  <script>
-    window.onscroll = function () { window.scrollTo(0, 0); };
-  </script>
+  <script src="https://kit.fontawesome.com/762c4f9e06.js"></script>
 </body>
 
 </html>
