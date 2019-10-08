@@ -10,6 +10,7 @@
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/762c4f9e06.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 </head>
 
@@ -237,32 +238,31 @@
       <p data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
         Please RSVP by 5 September 2020. Thank you!
       </p>
-      <form id="rsvpForm" action="https://docs.google.com/forms/d/e/1FAIpQLSfkwfibSiXPMqTJUyCu-m8SFPwyGNpvmdVaez49YEU-6l_hIQ/formResponse"
-      target="_self" method="POST">
+      <form id="rsvpForm">
         <div class="rsvpBox" data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
           <div class="rsvpCell">
             <i class="fas fa-user"></i>
-            <input type="text" name="name" placeholder="Name">
+            <input type="text" name="Name" placeholder="Name">
           </div>
 
           <div class="rsvpCell">
             <i class="fas fa-envelope"></i>
-            <input type="email" name="email" placeholder="E-mail">
+            <input type="email" name="Email" placeholder="E-mail">
           </div>
 
           <div class="rsvpCell">
             <i class="fas fa-church"></i>
-            <input type="text" name="church" placeholder="Church Solemnisation?">
+            <input type="text" name="Church" placeholder="Church Solemnisation?">
           </div>
           
           <div class="rsvpCell">
             <i class="fas fa-utensils"></i>
-            <input type="text" name="dinner" placeholder="Dinner Banquet?">
+            <input type="text" name="Dinner" placeholder="Dinner Banquet?">
           </div>
           
           <div class="rsvpCell">
             <i class="fas fa-seedling"></i>
-            <input type="text" name="dietary" placeholder="Dietary Requirements / Remarks">
+            <input type="text" name="Dietary" placeholder="Dietary Requirements / Remarks">
           </div>
 
           <div class="rsvpCell">
@@ -280,9 +280,11 @@
             Extra guest names here
           </div>
         </div>
+
         <div>
-          <input id="rsvpButton" class="rsvpButton" type="submit" value="RSVP">
+          <button type="submit" id="submit-form" class="rsvpButton" value="RSVP">Submit</button>
         </div>
+
       </form>
       <p data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
         For any queries, or to modify your attendance, please contact us at xxx@gmail.com
