@@ -32,7 +32,7 @@
       </form>
     </div>
     <div class="BOversion">
-      Version 2.5: fixed pics display<br />
+      Version 3.0: working rsvp form<br />
       For best performance, please avoid using Internet Explorer
     </div>
     <!--bouncing date, parallax scroll-->
@@ -272,8 +272,8 @@
             <div class="rsvpIcon">
               <i class="fas fa-user"></i>
             </div>
-            <input type="text" id="rsvpname" class="rsvpField" name="entry.1679726666" placeholder="Name *" maxlength="30"
-              required>
+            <input type="text" id="rsvpname" class="rsvpField" name="entry.1679726666" placeholder="Name *"
+              maxlength="30" required>
           </div>
 
           <div class="rsvpCellR rsvpCell">
@@ -288,7 +288,7 @@
               <i class="fas fa-church"></i>
             </div>
             <select name="entry.877086558" class="rsvpField" placeholder="Church Solemnisation?" required>
-              <option disabled value="" selected hidden>Are you attending the Church Solemnisation? *</option>
+              <option disabled value="" selected hidden>Church Solemnisation Attendance *</option>
               <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
               <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
             </select>
@@ -299,7 +299,7 @@
               <i class="fas fa-utensils"></i>
             </div>
             <select name="entry.383800029" class="rsvpField" placeholder="Dinner Banquet?" required>
-              <option disabled value="" selected hidden>Are you attending the Dinner Banquet? *</option>
+              <option disabled value="" selected hidden>Dinner Banquet Attendance *</option>
               <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
               <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
             </select>
@@ -309,7 +309,8 @@
             <div class="rsvpIcon">
               <i class="fas fa-seedling"></i>
             </div>
-            <textarea name="entry.2606285" rows="1" class="rsvpField" placeholder="Dietary Requirements" maxlength="300"></textarea>
+            <textarea name="entry.2606285" rows="1" class="rsvpField" placeholder="Dietary Requirements"
+              maxlength="300"></textarea>
           </div>
 
           <!--
@@ -329,15 +330,17 @@
           </div>
           -->
         </div>
-<div class="rsvpButtonBox">
-                  <button type="submit" id="submit-form" class="rsvpButton">Submit</button>
-                </div>
+
+        <div class="rsvpButtonBox">
+          <button type="submit" id="submit-form" class="rsvpButton">Submit</button>
+        </div>
 
       </form>
 
-      <p data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
+      <p class="rsvpText" data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
         For any queries, or to modify your attendance, please contact us at xxx@gmail.com
       </p>
+      <br />
     </div>
 
     <span class="offsetanchor" id="program"></span>
@@ -359,14 +362,13 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>thank you,</h2>
-        <h2 id="greeting">friend!</h2>
-        <p>We can't wait to see you there.</p>
+        <p>Thank you,</p>
+        <h3 id="greeting">friend!</h3>
+        <p>Looking forward to seeing you there!</p>
         <a class="btn" target="_blank"
           href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDdpZ2Iyb2t0YjJhdjY3M3Vuc3Y5ZWhyNjEgM2w4ZGN2NmF0YnBpdnA1OWduM2dmM3NtbmtAZw&amp;tmsrc=3l8dcv6atbpivp59gn3gf3smnk%40group.calendar.google.com">
-          <i class="material-icons">calendar_today</i>
-          Add to Google Calendar</a>
-        <a class="btn" href="pdf/eng_invite.pdf" download>Download Our Invite</a>
+          Add to Google Calendar (to be fixed)</a>
+        <a class="btn" href="pdf/eng_invite.pdf" download>Download Our Invite (to be added)</a>
       </div>
     </div>
 
