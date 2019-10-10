@@ -6,7 +6,7 @@
   <link rel="icon" href="pics/ringlogo.ico" />
   <link rel="stylesheet" href="stylesheet.css">
   <link
-    href="https://fonts.googleapis.com/css?family=Great+Vibes|Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
+    href="https://fonts.googleapis.com/css?family=Lato|Great+Vibes|Reenie+Beanie|Shadows+Into+Light+Two|Merriweather&display=swap"
     rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script>
@@ -265,42 +265,54 @@
       <form id="rsvpForm"
         action="https://docs.google.com/forms/d/e/1FAIpQLSfkwfibSiXPMqTJUyCu-m8SFPwyGNpvmdVaez49YEU-6l_hIQ/formResponse"
         method="POST" target="hidden_iframe" onsubmit="submitted=true;">
-        
+
         <div class="rsvpBox" data-aos="fade" data-aos-duration="600" data-aos-anchor-placement="center-bottom">
 
-          <div class="rsvpCell">
-            <i class="fas fa-user"></i>
-            <input type="text" id="rsvpname" name="entry.1679726666" placeholder="Name" maxlength="30" required>
+          <div class="rsvpCellL rsvpCell">
+            <div class="rsvpIcon">
+              <i class="fas fa-user"></i>
+            </div>
+            <input type="text" id="rsvpname" class="rsvpField" name="entry.1679726666" placeholder="Name *" maxlength="30"
+              required>
           </div>
 
-          <div class="rsvpCell">
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="entry.269163578" placeholder="E-mail" maxlength="40" required>
+          <div class="rsvpCellR rsvpCell">
+            <div class="rsvpIcon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <input type="email" name="entry.269163578" class="rsvpField" placeholder="E-mail *" maxlength="40" required>
           </div>
 
-          <div class="rsvpCell">
-            <i class="fas fa-church"></i>
-            <select name="entry.877086558" placeholder="Church Solemnisation?" required>
-                <option disabled value="" selected hidden>Church Solemnisation?</option>
-                <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
-                <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
+          <div class="rsvpCellL rsvpCell">
+            <div class="rsvpIcon">
+              <i class="fas fa-church"></i>
+            </div>
+            <select name="entry.877086558" class="rsvpField" placeholder="Church Solemnisation?" required>
+              <option disabled value="" selected hidden>Are you attending the Church Solemnisation? *</option>
+              <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
+              <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
             </select>
           </div>
 
-          <div class="rsvpCell">
-            <i class="fas fa-utensils"></i>
-            <select name="entry.383800029" placeholder="Dinner Banquet?" required>
-                <option disabled value="" selected hidden>Dinner Banquet?</option>
-                <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
-                <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
+          <div class="rsvpCellR rsvpCell">
+            <div class="rsvpIcon">
+              <i class="fas fa-utensils"></i>
+            </div>
+            <select name="entry.383800029" class="rsvpField" placeholder="Dinner Banquet?" required>
+              <option disabled value="" selected hidden>Are you attending the Dinner Banquet? *</option>
+              <option value="Yes, I&#39;ll be there!">Yes, I'll be there!</option>
+              <option value="Sorry, can&#39;t make it!">Sorry, can't make it!</option>
             </select>
           </div>
 
-          <div class="rsvpCell">
-            <i class="fas fa-seedling"></i>
-            <textarea name="entry.2606285" placeholder="Dietary Requirements / Remarks"></textarea>
+          <div class="rsvpCell2 rsvpCell">
+            <div class="rsvpIcon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <textarea name="entry.2606285" rows="1" class="rsvpField" placeholder="Dietary Requirements" maxlength="300"></textarea>
           </div>
 
+          <!--
           <div class="rsvpCell">
             <i class="fas fa-phone"></i>
             Phone No.
@@ -315,11 +327,11 @@
             <i class="fas fa-user-plus"></i>
             Extra guest names here
           </div>
+          -->
         </div>
-
-        <div>
-          <button type="submit" id="submit-form" class="rsvpButton">Submit</button>
-        </div>
+<div class="rsvpButtonBox">
+                  <button type="submit" id="submit-form" class="rsvpButton">Submit</button>
+                </div>
 
       </form>
 
@@ -345,17 +357,18 @@
     </div>
 
     <div id="myModal" class="modal">
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <h2>thank you,</h2>
-          <h2 id="greeting">friend!</h2>
-          <p>We can't wait to see you there.</p>
-          <a class="btn" target="_blank" href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDdpZ2Iyb2t0YjJhdjY3M3Vuc3Y5ZWhyNjEgM2w4ZGN2NmF0YnBpdnA1OWduM2dmM3NtbmtAZw&amp;tmsrc=3l8dcv6atbpivp59gn3gf3smnk%40group.calendar.google.com">
-            <i class="material-icons">calendar_today</i> 
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>thank you,</h2>
+        <h2 id="greeting">friend!</h2>
+        <p>We can't wait to see you there.</p>
+        <a class="btn" target="_blank"
+          href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=MDdpZ2Iyb2t0YjJhdjY3M3Vuc3Y5ZWhyNjEgM2w4ZGN2NmF0YnBpdnA1OWduM2dmM3NtbmtAZw&amp;tmsrc=3l8dcv6atbpivp59gn3gf3smnk%40group.calendar.google.com">
+          <i class="material-icons">calendar_today</i>
           Add to Google Calendar</a>
-          <a class="btn" href="pdf/eng_invite.pdf" download>Download Our Invite</a>
-        </div>
-     </div>
+        <a class="btn" href="pdf/eng_invite.pdf" download>Download Our Invite</a>
+      </div>
+    </div>
 
   </div>
 

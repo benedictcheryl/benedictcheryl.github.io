@@ -1,6 +1,6 @@
 body {
   text-align: center;
-  font-family: 'Merriweather', "Times New Roman", Times, serif;
+  font-family: 'Lato', 'Merriweather', Arial, sans-serif;
   color: #111111;
   font-size: 18px;
   margin: 0;
@@ -243,10 +243,12 @@ h3 {
   opacity: 0.95;
   max-width: 75vw;
   max-height: 25vh;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05)), rgb(191, 241, 255);
+  border: solid 0.03px grey;
 }
 
 .BOsubmitButton:hover {
-  opacity: 0.7;/* edit this? */
+  background:  linear-gradient(to bottom, transparent, rgba(0,0,0,0.05)), rgb(145, 229, 255);
 }
 
 .BOversion {
@@ -322,7 +324,7 @@ h3 {
 /* === Style the navbar (and related stuff) ==== */
 #navbar {
     overflow: hidden;
-    background-color:#c2eefa;
+    background-color:rgb(191, 241, 255);#c2eefa;
     z-index: 10; 
     position: fixed;
     top: 0;
@@ -360,7 +362,7 @@ h3 {
 
 #navbar a:hover {
   color: black;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .offsetanchor {
@@ -387,7 +389,7 @@ h3 {
   text-align: center;
   font-family: 'Reenie Beanie', Garamond, cursive;
   font-size: 2.2vw;
-  text-shadow: 0.05vw 0.05vw 0.08vw #aaa;
+  text-shadow: 0.05vw 0.05vw 0.08vw #cccccc;
   text-emphasis: bolder;
 }
 
@@ -398,7 +400,7 @@ h3 {
   transform: translate(0, -55%);
   font-family: 'Reenie Beanie', Garamond, cursive;
   font-size: 2.6vw;
-  text-shadow: 0.05vw 0.05vw 0.08vw #aaa;
+  text-shadow: 0.05vw 0.05vw 0.08vw #cccccc;
   text-emphasis: bold;
 }
 
@@ -531,51 +533,88 @@ h3 {
 /* === RSVP === */
 
 .rsvpBox {
-  display: grid;
+  /*display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
-  /*display: flex;
+  grid-gap: 10px;*/
+  display: flex;
   flex-wrap: wrap;
-  flex-direction: row;*/
+  flex-direction: row;
   width: 100%;
   padding: 0px;
-  margin: 15px auto;
-  border-style: solid;
+  margin: 30px 0px 0px;
   box-sizing: border-box;
+}
+
+.rsvpCellL {
+  padding: 0px 15px 0px 30px;
+}
+
+.rsvpCellR {
+  padding: 0px 30px 0px 15px;
 }
 
 .rsvpCell {
+  font-size: 18px;
   display: -ms-flexbox; /* IE10 */
   display: flex;
-  width: 16vw;
-  padding: 10px;
-  margin: 10px 1vw;
-  border-style: solid;
+  width: calc(100%/2);
+  margin: 10px 0px;
   box-sizing: border-box;
-  text-align: center;
+}
+
+.rsvpCell2 {
+  width: 100%;
+  padding: 0px 30px;
+}
+
+.rsvpIcon {
+  background-color: rgb(70, 70, 70);
+  color: rgb(191, 241, 255);
+  padding: 1px 10px;
+  width: 50px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rsvpField {
+  font-family: 'Lato', 'Arial', sans-serif;
+  width: 100%;
+  font-size: 18px;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.rsvpButtonBox {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0px 30px;
+  margin: 20px 0px 30px;
 }
 
 .rsvpButton {
-  padding: 10px 100px;
+  padding: 10px 15px;
   font-family: 'Shadows Into Light Two', 'Merriweather', "Times New Roman", Times, serif;
   font-size: 18px;
   text-align: center;
-  box-sizing: border-box;
-  max-width: 90vw;
-  max-height: 15vw;
-  opacity: 1;
+  width: 100%;
+  background: linear-gradient(to bottom, transparent, rgba(0,0,0,0.05)), rgb(191, 241, 255);
+  border: solid 0.03px grey;
 }
 
+
 .rsvpButton:hover {
- opacity: 0.7;
+  background:  linear-gradient(to bottom, transparent, rgba(0,0,0,0.05)), rgb(145, 229, 255);
 }
 
 
 /* === Credits === */
 
 .credits {
-  background-color: rgb(100, 100, 100);
-  color: rgb(223, 223, 223);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(255, 196, 0);rgb(223, 223, 223);
   padding: 10px 20px 0px 20px;
   font-size: 17px;
   line-height: 50%;
