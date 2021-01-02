@@ -1,4 +1,4 @@
-var weddingdate = new Date("Dec 5, 2020 10:00:00").getTime();
+var weddingdate = new Date("Mar 13, 2021 11:00:00").getTime();
 var x = setInterval(function () {
     var now = new Date().getTime();
     var t = weddingdate - now;

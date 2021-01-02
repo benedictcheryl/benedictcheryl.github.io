@@ -15,13 +15,13 @@ h1 {
   font-family: 'Reenie Beanie', Garamond, cursive;
   font-size: 3.5vw;
   transform: scale(2);
-  text-shadow: 0.15vw 0.15vw 0.25vw #aaa;
+  text-shadow: 0.1vw 0.1vw 0.1vw #aaa;
 }
 
 /* === Title Animation === */
 @-moz-keyframes textflash {
   0%, 25%, 100% {color: black; opacity:1;}
-  80% {color: black; opacity: 0.05;}
+  80% {color: black; opacity: 1;}
   85% {color: rgb(192, 147, 0); opacity:1;}
   83% {color: rgb(255, 196, 0); opacity:1;}
   82% {color: rgb(255, 228, 139); opacity:1;}
@@ -30,7 +30,7 @@ h1 {
 
 @-webkit-keyframes textflash {
   0%, 25%, 100% {color: black; opacity:1;}
-  80% {color: black; opacity: 0.05;}
+  80% {color: black; opacity: 1;}
   85% {color: rgb(192, 147, 0); opacity:1;}
   83% {color: rgb(255, 196, 0); opacity:1;}
   82% {color: rgb(255, 228, 139); opacity:1;}
@@ -39,7 +39,7 @@ h1 {
 
 @keyframes textflash {
   0%, 25%, 100% {color: black; opacity:1;}
-  80% {color: black; opacity: 0.05;}
+  80% {color: black; opacity: 1;}
   85% {color: rgb(192, 147, 0); opacity:1;}
   83% {color: rgb(255, 196, 0); opacity:1;}
   82% {color: rgb(255, 228, 139); opacity:1;}
@@ -120,28 +120,30 @@ h2 {
 h3 {
   font-family: 'Shadows Into Light Two', Times, cursive;
   font-size: 2.3vw;
+  text-shadow: 0.04vw 0.04vw 0.05vw #aaa;
+  font-weight: bolder;
 }
 
 /* Section banner */
 .sectionBanner {
-  background: -webkit-linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 1%, transparent);
-  background: -moz-linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 1%, transparent);
-  background: linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 1%, transparent);
+  background: -webkit-linear-gradient(to bottom, transparent, rgba(255, 201, 85, 0.7) 1%, transparent);
+  background: -moz-linear-gradient(to bottom, transparent,  rgba(255, 201, 85, 0.7) 1%, transparent);
+  background: linear-gradient(to bottom, transparent,  rgba(255, 201, 85, 0.7) 1%, transparent);
   margin: 0px;
   width: 100%;
 }
 
 .sectionBanner_0 {
-  background: -webkit-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 1%, rgba(255,255,255,0.95));
-  background: -moz-linear-gradient(to bottom, transparent, rgba(220,241,247,0.7) 1%, rgba(255,255,255,0.95));
-  background: linear-gradient(to bottom, transparent, rgba(196, 242, 255, 0.7) 1%, rgba(255,255,255,0.95));
+  background: -webkit-linear-gradient(to bottom, transparent,  rgba(255, 201, 85, 0.7) 1%, rgba(255,255,255,0.95));
+  background: -moz-linear-gradient(to bottom, transparent,  rgba(255, 201, 85, 0.7) 1%, rgba(255,255,255,0.95));
+  background: linear-gradient(to bottom, transparent,  rgba(255, 201, 85, 0.7) 1%, rgba(255,255,255,0.95));
   margin: 0px;
   width: 100%;
 }
 
 /* Main background */
 .mainBG {
-  background: rgba(255,255,255,0.95);
+  background: rgba(255, 255, 255, 0.95);
   width: 100%;
   background-size: 150vw;
   background-position: center;
@@ -155,13 +157,13 @@ h3 {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #dcf1f7;
+  background-color: #6b6b6b;
   z-index: 10000;
   color: white;
 }
 
 .BOinit {
-  background-color: #dcf1f7;
+  background-color: #f7f0dc;
 }
 
 .disappear {
@@ -243,18 +245,18 @@ h3 {
   opacity: 0.95;
   max-width: 75vw;
   max-height: 25vh;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(144, 223, 247);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(226, 185, 2);
   border: solid 0.03px grey;
 }
 
 .BOsubmitButton:hover {
-  background:  linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(118, 193, 255);
+  background:  linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(224, 191, 79)
 }
 
 .BOversion {
   font-size: 2vmin;
   position: absolute;
-  color: rgb(120, 120, 120);
+  color: rgb(161, 161, 161);
   bottom: 5%;
   left: 50%;
   transform: translate(-50%, 50%);
@@ -271,19 +273,20 @@ h3 {
     overflow: hidden;
     width: 100%;
     height: 100vh;
+    background:  linear-gradient(to bottom, rgba(255, 255, 255, 0.27) 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .absoluteBG {
   z-index: -1;
   position: fixed;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   margin: 0;
   padding: 0;
   overflow: hidden;
 
-  background-image: url("pics/tenerife.jpg");
-  background-position: center 30%;
+  background-image: url("pics/treepic.jpg");
+  background-position: center 50%;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -313,6 +316,8 @@ h3 {
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', 'Merriweather', cursive;
     font-size: 1.65vw;
+    text-shadow: 0.03vw 0.03vw 0.04vw #aaa;
+    font-weight: bold;
 }
 
 #navanchor {
@@ -324,7 +329,7 @@ h3 {
 /* === Style the navbar (and related stuff) ==== */
 #navbar {
     overflow: hidden;
-    background-color:rgb(144, 223, 247);rgb(191, 241, 255);#c2eefa;
+    background-color:rgb(226, 185, 2);
     z-index: 10; 
     position: fixed;
     top: 0;
@@ -500,6 +505,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  align-items: stretch;
   width: 100%;
   padding: 0px;
   margin: 0px;
@@ -510,7 +516,6 @@ h3 {
 }
 
 .detailsCell {
-  display: table;
   box-sizing: border-box;
   width: 50%;
   margin: 0px;
@@ -526,7 +531,7 @@ h3 {
 }
 
 .venueMap {
-  height: auto;
+  min-height: 25vh;
   padding: 0px;
 }
 
@@ -589,7 +594,7 @@ h3 {
 
 .rsvpIcon {
   background-color: rgb(70, 70, 70);
-  color: rgb(144, 223, 247);
+  color: rgb(226, 185, 2);
   padding: 1px 1px;
   width: 50px;
   /*box-sizing: border-box;*/
@@ -620,12 +625,12 @@ h3 {
   font-size: 18px;
   text-align: center;
   width: 100%;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(144, 223, 247);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(226, 185, 2);
   border: solid 0.03px grey;
 }
 
 .rsvpButton:hover {
-  background:  linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(118, 193, 255);
+  background:  linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(230, 203, 83);
 }
 
 .rsvpDeadline {
@@ -704,7 +709,7 @@ h3 {
   display: block;
   text-decoration: none;
   opacity: 0.95;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(144, 223, 247);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05), rgba(0,0,0,0.05)), rgb(226, 185, 2);
   border: solid 0.03px grey;
   color: black;
   cursor: pointer;
@@ -922,6 +927,7 @@ h3 {
     transform: translate(-50%, -50%);
     font-family: 'Shadows Into Light Two', cursive;
     font-size: 3.15vmin;
+
   }
 
 
