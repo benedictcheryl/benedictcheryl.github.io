@@ -97,20 +97,32 @@ function loadpage() {
                 church.classList.add("disappear");
                 var dinner = document.getElementById("dinnerRSVP");
                 dinner.classList.add("disappear"); 
+                var church2 = document.getElementById("churchDetails");
+                church2.classList.add("disappear");
+                var dinner2 = document.getElementById("dinnerDetails");
+                dinner2.classList.add("disappear"); 
               break;
             case "248724": /* church only */
                 var stream = document.getElementById("streamRSVP");
                 stream.classList.add("disappear");
                 var dinner = document.getElementById("dinnerRSVP");
                 dinner.classList.add("disappear"); 
+                var stream2 = document.getElementById("streamDetails");
+                stream2.classList.add("disappear");
+                var dinner2 = document.getElementById("dinnerDetails");
+                dinner2.classList.add("disappear");
               break;
             case "346637": /* stream and dinner */
                 var church = document.getElementById("churchRSVP");
                 church.classList.add("disappear");
+                var church2 = document.getElementById("churchDetails");
+                church2.classList.add("disappear");
               break;
             case "248346": /* church and dinner */
                 var stream = document.getElementById("streamRSVP");
                 stream.classList.add("disappear");
+                var stream2 = document.getElementById("streamDetails");
+                stream2.classList.add("disappear");
             break;
         }
     }
