@@ -535,6 +535,13 @@ h3 {
   padding: 0px;
 }
 
+.streamPic {
+  background-image: url("pics/stream.png");
+  background-position: center 50%;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 /* === RSVP === */
 
 .rsvpFormBox {
@@ -875,13 +882,13 @@ h3 {
   .rsvpText {margin: 15px 15px;}
 
   .streamRSVP {
-    height: 1100;
+    height: 1270;
   }
   .churchRSVP {
-    height: 1380;
+    height: 1530;
   }
   .dinnerRSVP {
-    height: 1580;
+    height: 1600;
   }
 
   .credits {

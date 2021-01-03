@@ -101,6 +101,8 @@ function loadpage() {
                 church2.classList.add("disappear");
                 var dinner2 = document.getElementById("dinnerDetails");
                 dinner2.classList.add("disappear"); 
+                var rem = document.getElementById("rememberRSVP");
+                rem.classList.add("disappear"); 
               break;
             case "248724": /* church only */
                 var stream = document.getElementById("streamRSVP");
@@ -111,6 +113,8 @@ function loadpage() {
                 stream2.classList.add("disappear");
                 var dinner2 = document.getElementById("dinnerDetails");
                 dinner2.classList.add("disappear");
+                var rem = document.getElementById("rememberRSVP");
+                rem.classList.add("disappear"); 
               break;
             case "346637": /* stream and dinner */
                 var church = document.getElementById("churchRSVP");
