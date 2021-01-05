@@ -286,7 +286,7 @@ h3 {
   overflow: hidden;
 
   background-image: url("pics/treepic.jpg");
-  background-position: center 50%;
+  background-position: center 60%;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -882,7 +882,7 @@ h3 {
   .rsvpText {margin: 15px 15px;}
 
   .streamRSVP {
-    height: 1270;
+    height: 1290;
   }
   .churchRSVP {
     height: 1530;
